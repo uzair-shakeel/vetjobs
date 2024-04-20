@@ -22,11 +22,12 @@ import icon4 from "../../public/icons/Featured icon (3).png";
 import icon5 from "../../public/icons/Featured icon (4).png";
 import icon6 from "../../public/icons/Featured icon (5).png";
 import illustration from "../../public/Illustration.png";
+import LogoScroller from "../components/Scroller";
 
 const Home = () => {
   return (
     <Layout>
-      <section className="min-h-screen py-[2%]">
+      <section className="min-h-screen pt-[2%]">
         <div className="grid grid-cols-2">
           <div className="  h-full relative">
             <div className="absolute px-[15%] top-1/2 transform -translate-y-1/2">
@@ -68,6 +69,8 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <LogoScroller />
 
       <section className="min-h-screen flex flex-col items-center px-[4%] py-[5%] gap-[60px] bg-[#E6F3F1] mx-auto w-full">
         <div className="space-y-5 flex items-center flex-col">
