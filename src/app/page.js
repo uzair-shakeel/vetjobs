@@ -40,10 +40,10 @@ const Home = () => {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           <div className="  h-full ">
             <div className=" flex justify-center h-full flex-col">
-              <div className="relative">
+              <div className="relative ">
                 <Image
                   src={illustration}
-                  className="absolute lg:right-[180px] right-[70px] top-[-40px] lg:top-[-40px]"
+                  className="absolute hidden lg:block lg:right-[180px] right-[70px] top-[-40px] lg:top-[-40px]"
                 />
                 <h1 className="text-[35px] leading-[40px] lg:text-[52px] py-3 lg:leading-[62px] text-[#171848] font-bold">
                   Connecting veterinarian staff <br /> and employers
@@ -124,7 +124,7 @@ const Home = () => {
           <div className="relative">
             <Image
               src={illustration}
-              className="absolute md:right-[-70px] right-[-10px] top-[-50px] md:top-[-50px]"
+              className="absolute hidden lg:block md:right-[-70px] right-[-10px] top-[-50px] md:top-[-50px]"
             />
             <h1 className="text-[35px] text-center  md:text-[42px]  font-bold">
               Why choose Vetjobs
@@ -257,7 +257,7 @@ const Home = () => {
           <div className="relative">
             <Image
               src={illustration}
-              className="absolute md:left-[-70px] left-[-80px] rotate-[-90deg] md:top-[-60px] top-[-60px]"
+              className="absolute hidden lg:block md:left-[-70px] left-[-80px] rotate-[-90deg] md:top-[-60px] top-[-60px]"
             />
             <h3 className="text-[35px] md:text-[42px] font-bold">
               Read our blog
