@@ -31,7 +31,7 @@ const page = () => {
 
             <div className="py-3">
               <h4 className="font-semibold text-[20px] py-3">Job details</h4>
-              <div className="flex flex-col md:flex-row justify-between w-full text-[14px] text-black/60">
+              <div className="flex flex-col md:flex-row gap-3 justify-between w-full text-[14px] text-black/60">
                 <div className="flex items-center gap-4">
                   Job Type
                   <div className="bg-[#F9F7FD] rounded-full flex gap-2 text-black font-semibold items-center justify-center py-1 px-2">

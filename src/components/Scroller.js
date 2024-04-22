@@ -18,15 +18,15 @@ const logos = [
 ];
 const LogoScroller = () => {
   return (
-    <section className="tournament-logos-border  pb-[30px] relative block overflow-hidden">
+    <section className="tournament-logos-border  py-[50px]  relative block overflow-hidden">
       <div>
-        <div className=" mt-20 mb-14">
+        <div className=" lg:mt-20  lg:mb-14">
           <div class="mx-auto w-full flex overflow-hidden whitespace-nowrap">
             <div className="comm flex gap-5">
               {logos.map((partner) => (
                 <div
                   key={partner.id}
-                  className="flex flex-col justify-start items-center w-[200px]"
+                  className="flex flex-col justify-start items-center w-[100px] md:w-[150px] lg:w-[200px]"
                 >
                   <Image src={partner.img} loading="lazy" />
                 </div>
@@ -37,7 +37,7 @@ const LogoScroller = () => {
               {logos.map((partner) => (
                 <div
                   key={partner.id}
-                  className="flex flex-col justify-start items-center w-[200px]"
+                  className="flex flex-col justify-start items-center w-[100px] md:w-[150px] lg:w-[200px]"
                 >
                   <Image src={partner.img} loading="lazy" />
                 </div>

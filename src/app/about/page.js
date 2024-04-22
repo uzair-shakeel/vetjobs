@@ -17,6 +17,7 @@ import Globe from "../../../public/Vector.svg";
 import Flag from "../../../public/Vector (1).svg";
 import Network from "../../../public/Vector (2).svg";
 import { ArrowUpRight } from "lucide-react";
+import Team from "../../components/Team";
 
 const page = () => {
   return (
@@ -151,6 +152,8 @@ const page = () => {
               </div>
             </div>
           </div>
+
+          <Team />
           <Reviews />
 
           <Doctor />
