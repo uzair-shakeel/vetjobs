@@ -64,7 +64,7 @@ const Reviews = () => {
           className="cursor-pointer"
         />
       </div>
-      <ul className="flex gap-2 items-center">
+      <ul className="flex gap-2 items-center py-6 mb-8 md:mb-0 lg:py-2">
         {[0, 1, 2].map((index) => (
           <li
             key={index}
