@@ -13,9 +13,13 @@ import icon3 from "../../../public/icons/Featured icon (2).png";
 import icon4 from "../../../public/icons/Featured icon (3).png";
 import icon5 from "../../../public/icons/Featured icon (4).png";
 import icon6 from "../../../public/icons/Featured icon (5).png";
-import { Button, Input } from "@nextui-org/react";
+import happy from "../../../public/happy.svg";
+import badge from "../../../public/badge.svg";
+import notebook from "../../../public/notebook.svg";
+import { Button, Input, Textarea } from "@nextui-org/react";
 import LogoScroller from "../../components/Scroller";
 import Reviews from "../../components/Reviews";
+import { ArrowUpRight } from "lucide-react";
 
 const page = () => {
   return (
@@ -50,11 +54,7 @@ const page = () => {
           <div className="grid grid-cols-4 gap-2">
             <div className="bg-[#018870] px-6 pt-6 rounded-lg text-white rounded-tr-[30%]">
               <div className="rounded-lg rounded-tr-[60%] rounded-tl-[20%] h-14 w-14 flex items-center justify-center bg-white">
-                <BsPersonRaisedHand
-                  size={50}
-                  className=" text-[#018870] p-2 
-                "
-                />
+                <Image src={happy} className=" text-[#018870] p-1" />
               </div>
               <h1 className="font-semibold text-[20px] py-3">
                 Outsource Reached
@@ -68,11 +68,7 @@ const page = () => {
             </div>
             <div className="px-6 pt-6 rounded-lg  rounded-tr-[30%]">
               <div className="rounded-lg rounded-tr-[60%] rounded-tl-[20%] h-14 w-14 flex items-center justify-center bg-[#E9F3F1]">
-                <CiMemoPad
-                  size={50}
-                  className=" text-[#018870] p-2 
-                "
-                />
+                <notebook src={happy} className=" text-[#018870] p-1" />
               </div>
               <h1 className="font-semibold text-[20px] py-3">
                 Outsource Reached
@@ -86,11 +82,7 @@ const page = () => {
             </div>
             <div className="px-6 pt-6 rounded-lg  rounded-tr-[30%]">
               <div className="rounded-lg rounded-tr-[60%] rounded-tl-[20%] h-14 w-14 flex items-center justify-center bg-[#E9F3F1]">
-                <GiPoliceBadge
-                  size={50}
-                  className=" text-[#018870] p-2 
-                "
-                />
+                <Image src={badge} className=" text-[#018870] p-1" />
               </div>
               <h1 className="font-semibold text-[20px] py-3">
                 Outsource Reached
@@ -104,11 +96,7 @@ const page = () => {
             </div>
             <div className="px-6 pt-6 rounded-lg  rounded-tr-[30%]">
               <div className="rounded-lg rounded-tr-[60%] rounded-tl-[20%] h-14 w-14 flex items-center justify-center bg-[#E9F3F1]">
-                <CiMemoPad
-                  size={50}
-                  className=" text-[#018870] p-2 
-                "
-                />
+                <Image src={happy} className=" text-[#018870] p-1" />
               </div>
               <h1 className="font-semibold text-[20px] py-3">
                 Outsource Reached
@@ -206,7 +194,7 @@ const page = () => {
 
         <Button size="lg" className="bg-[#018870] text-white">
           See all the benefits
-          <ArrowUp size="22" className="rotate-45" />
+          <ArrowUpRight />
         </Button>
       </section>
       <LogoScroller />
@@ -230,11 +218,11 @@ const page = () => {
           <div className="py-3">
             <Button size="lg" className="bg-[#018870]  text-white">
               Learn More Now
-              <ArrowUp size="22" className="rotate-45" />
+              <ArrowUpRight />
             </Button>
           </div>
         </div>
-        <div className="shadow-2xl px-[25px] py-[30px]">
+        <div className="shadow-2xl  px-[25px] py-[15px]">
           <h1 className="text-[40px] font-semibold ">Contact Form</h1>
           <p className="text-[16px] text-black/80">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -263,9 +251,9 @@ const page = () => {
           </div>
           <div className="space-y-2">
             <h3 className="font-semibold">Your Message</h3>
-            <Input placeholder="Enter your Message" fullWidth />
+            <Textarea placeholder="Enter Your Message" />
           </div>
-          <Button fullWidth className="bg-[#018870] my-9 text-white">
+          <Button fullWidth className="bg-[#018870] py-6 my-9 text-white">
             Send Message
           </Button>
         </div>

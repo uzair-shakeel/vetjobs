@@ -2,8 +2,8 @@ import React from "react";
 import review1 from "../../public/reviews/1.jpg";
 import review2 from "../../public/reviews/2.jpg";
 import review3 from "../../public/reviews/3.jpg";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 import Image from "next/image";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const Reviews = () => {
   return (
@@ -12,11 +12,11 @@ const Reviews = () => {
         Our Reviews
       </p>
       <div className="flex gap-6 items-center">
-        <FaChevronLeft size={25} />
+        <ChevronLeft size={35} />
         <h1 className="text-[52px] font-bold text-center">
           What Our Clients Say About Us
         </h1>
-        <FaChevronRight size={25} />
+        <ChevronRight size={35} />
       </div>
       <ul className="flex gap-2 items-center">
         {[1, 2, 3, 4, 5].map((page, index) => (

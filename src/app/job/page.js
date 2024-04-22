@@ -1,15 +1,18 @@
 "use client";
-import Footer from "../../components/Footer";
-import Header from "../../components/Header";
 import React from "react";
 import avatar from "../../../public/Avatar.png";
 import Image from "next/image";
 import { Call, Car, Clock } from "iconsax-react";
 import { Button } from "@nextui-org/react";
-import Ghost from "../../../public/icons/ghost.png";
+import Ghost from "../../../public/ghost.svg";
 import Layout from "../../components/Layout";
-import { FaFlag } from "react-icons/fa6";
 import Doctor from "../../components/doctor";
+import Link from "next/link";
+import CarIcon from "../../../public/car.svg";
+import ClockIcon from "../../../public/clock.svg";
+import ClockGIcon from "../../../public/clockG.svg";
+import CashIcon from "../../../public/cash.svg";
+import { MapPin } from "lucide-react";
 
 const page = () => {
   return (
@@ -21,9 +24,10 @@ const page = () => {
               <h1 className="text-[32px] leading=[54px] font-bold">
                 Graphic Design
               </h1>
-              <p className="text-[14px] text-black/60">
-                Sanderson 812 NT * 03-24-2023
-              </p>
+              <div className="flex items-center gap-2 text-[14px] text-black/60">
+                <MapPin size={16} />
+                <p className="">Sanderson 812 NT * 03-24-2023</p>
+              </div>
             </div>
 
             <div className="py-3">
@@ -32,19 +36,20 @@ const page = () => {
                 <div className="flex items-center gap-4">
                   Job Type
                   <div className="bg-[#F9F7FD] rounded-full flex gap-2 text-black font-semibold items-center justify-center py-1 px-2">
-                    <Clock size="15" color="#915BCF" /> Full time
+                    <Image src={ClockIcon} /> Full time
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
                   Hourly Rate
                   <div className="bg-[#F9F7FD] rounded-full flex gap-2 text-black font-semibold items-center justify-center py-1 px-2">
-                    <Clock size="22" color="#915BCF" /> 10 - 20
+                    <Image src={CashIcon} /> 10 - 20
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
                   Distance
                   <div className="bg-[#F9F7FD] rounded-full flex gap-2 text-black font-semibold items-center justify-center py-1 px-2">
-                    <Car size="22" color="#EB9D55" /> 5km
+                    <Image src={CarIcon} />
+                    5km
                   </div>
                 </div>
               </div>
@@ -62,7 +67,7 @@ const page = () => {
                       <tr className=" py-4">
                         <td className=" ">
                           <p className="flex items-center gap-2 text-[16px] text-black/80">
-                            <Clock size="22" color="#915BCF" /> Monday
+                            <Image src={ClockIcon} /> Monday
                           </p>
                         </td>
                         <td className="  text-[16px] text-black/80">
@@ -75,7 +80,7 @@ const page = () => {
                       <tr className=" py-4">
                         <td className=" ">
                           <p className="flex items-center gap-2 text-[16px] text-black/80">
-                            <Clock size="22" color="#915BCF" /> Tuesday
+                            <Image src={ClockIcon} /> Tuesday
                           </p>
                         </td>
                         <td className="  text-[16px] text-black/80">
@@ -88,7 +93,7 @@ const page = () => {
                       <tr className=" py-4">
                         <td className=" ">
                           <p className="flex items-center gap-2 text-[16px] text-black/80">
-                            <Clock size="22" color="#915BCF" /> Wednesday
+                            <Image src={ClockIcon} /> Wednesday
                           </p>
                         </td>
                         <td className="  text-[16px] text-black/80">
@@ -101,7 +106,7 @@ const page = () => {
                       <tr className=" py-4">
                         <td className=" ">
                           <p className="flex items-center gap-2 text-[16px] text-black/80">
-                            <Clock size="22" color="#915BCF" /> Thursday
+                            <Image src={ClockIcon} /> Thursday
                           </p>
                         </td>
                         <td className="  text-[16px] text-black/80">
@@ -114,7 +119,7 @@ const page = () => {
                       <tr className=" py-4">
                         <td className=" ">
                           <p className="flex items-center gap-2 text-[16px] text-black/80">
-                            <Clock size="22" color="#915BCF" /> Friday
+                            <Image src={ClockIcon} /> Friday
                           </p>
                         </td>
                         <td className="  text-[16px] text-black/80">
@@ -127,7 +132,7 @@ const page = () => {
                       <tr className=" py-4">
                         <td className=" ">
                           <p className="flex items-center gap-2 text-[16px] text-black/80">
-                            <Clock size="22" color="#915BCF" /> Saturday
+                            <Image src={ClockIcon} /> Saturday
                           </p>
                         </td>
                         <td className="  text-[16px] text-black/80">
@@ -140,7 +145,7 @@ const page = () => {
                       <tr className=" py-4">
                         <td className=" ">
                           <p className="flex items-center gap-2 text-[16px] text-black/80">
-                            <Clock size="22" color="#915BCF" /> Sunday
+                            <Image src={ClockIcon} /> Sunday
                           </p>
                         </td>
                         <td className="  text-[16px] text-black/80">
@@ -229,14 +234,25 @@ const page = () => {
                   </p>
                 </div>
                 <Button>
-                  <FaFlag />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    className="w-6 h-6"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M3 2.25a.75.75 0 0 1 .75.75v.54l1.838-.46a9.75 9.75 0 0 1 6.725.738l.108.054A8.25 8.25 0 0 0 18 4.524l3.11-.732a.75.75 0 0 1 .917.81 47.784 47.784 0 0 0 .005 10.337.75.75 0 0 1-.574.812l-3.114.733a9.75 9.75 0 0 1-6.594-.77l-.108-.054a8.25 8.25 0 0 0-5.69-.625l-2.202.55V21a.75.75 0 0 1-1.5 0V3A.75.75 0 0 1 3 2.25Z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
                   Report Job
                 </Button>
               </div>
             </div>
           </div>
-          <div className="rounded-[15px] space-y-[20px] w-[30%]  shadow-2xl px-4 py-7 ">
-            <h3>Recruiters info</h3>
+          <div className="rounded-[15px] max-h-[370px] flex flex-col gap-4 justify-center  w-[30%]  shadow-2xl px-4 py-7 ">
+            <h3 className="text-[16px font-semibold]">Recruiters info</h3>
             <div
               className="flex gap-2 items-center
           "
@@ -248,11 +264,30 @@ const page = () => {
               </div>
             </div>
             <div className="flex gap-2">
-              <Call size="22" className="text-primary" variant="Bold" />{" "}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="#915BCF"
+                className="w-6 h-6"
+              >
+                <path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
+                <path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
+              </svg>
               youraddress@yahoo.com
             </div>
             <div className="flex gap-2">
-              <Call size="22" className="text-primary" variant="Bold" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="#915BCF"
+                className="w-6 h-6"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z"
+                  clipRule="evenodd"
+                />
+              </svg>
               (219) 565-0114
             </div>
             <Button fullWidth className="font-bold">

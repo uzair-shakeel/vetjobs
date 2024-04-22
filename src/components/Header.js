@@ -6,6 +6,7 @@ import Logo from "../../public/Logo.png";
 import Image from "next/image";
 import { Button } from "@nextui-org/react";
 import { ArrowUp } from "iconsax-react";
+import { ArrowUpRight } from "lucide-react";
 
 const Header = () => {
   return (
@@ -24,7 +25,7 @@ const Header = () => {
             <Link href="/about">About</Link>
           </li>
           <li>
-            <Link href="/services">Reviews</Link>
+            <Link href="/">Reviews</Link>
           </li>
           <li>
             <Link href="/jobs">My Clients</Link>
@@ -32,11 +33,12 @@ const Header = () => {
           <li>
             <Link href="/jobs">Contacts</Link>
           </li>
-
-          <Button size="lg" className="bg-[#018870] text-white">
-            See the current openings
-            <ArrowUp size="22" className="rotate-45" />
-          </Button>
+          <Link href="/jobs">
+            <Button size="lg" className="bg-[#018870] text-white">
+              See the current openings
+              <ArrowUpRight />
+            </Button>
+          </Link>
         </ul>
       </nav>
     </header>

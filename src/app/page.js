@@ -3,7 +3,7 @@
 import React from "react";
 import Layout from "../components/Layout";
 import Image from "next/image";
-import Hero1 from "../../public/Hero/BG.png";
+import Hero1 from "../../public/Hero/1.png";
 import Hero6 from "../../public/Hero/Group 1171284114.png";
 import Hero2 from "../../public/Hero/Image 2.png";
 import Hero3 from "../../public/Hero/Image 3.png";
@@ -23,6 +23,16 @@ import icon5 from "../../public/icons/Featured icon (4).png";
 import icon6 from "../../public/icons/Featured icon (5).png";
 import illustration from "../../public/Illustration.png";
 import LogoScroller from "../components/Scroller";
+import Link from "next/link";
+import {
+  Waypoints,
+  Mail,
+  MessageCircleQuestion,
+  Smile,
+  Zap,
+  BarChart2,
+  ArrowUpRight,
+} from "lucide-react";
 
 const Home = () => {
   return (
@@ -46,25 +56,63 @@ const Home = () => {
                 truly professional website, landing page or admin panel for your
                 SaaS. <br />
               </p>
-              <Button size="lg" className="bg-[#018870] text-white">
-                See the current openings
-                <ArrowUp size="22" className="rotate-45" />
-              </Button>
+              <Link href="/jobs">
+                <Button size="lg" className="bg-[#018870] text-white">
+                  See the current openings
+                  <ArrowUpRight />
+                </Button>
+              </Link>
             </div>
           </div>
 
           <div className="h-full w-full flex flex-col gap-2">
             <div className="flex gap-2">
               <div className="flex gap-2 flex-col ">
-                <Image src={Hero1} alt="Logo" />
-                <Image src={Hero3} alt="Logo" />
+                <div className="bg-yellow-500 rounded-[25px] overflow-hidden w-[200px] h-[200px]">
+                  <Image
+                    src={Hero1}
+                    alt="Logo"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className=" rounded-[25px] overflow-hidden w-[200px] h-auto">
+                  <Image
+                    src={Hero3}
+                    alt="Logo"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
-              <Image src={Hero2} alt="Logo" />
+              <div className=" rounded-[25px] overflow-hidden w-auto h-auto">
+                <Image
+                  src={Hero2}
+                  alt="Logo"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
             <div className="flex gap-2">
-              <Image src={Hero4} alt="Logo" />
-              <Image src={Hero6} alt="Logo" />
-              <Image src={Hero5} alt="Logo" />
+              <div className=" rounded-[25px] overflow-hidden w-[220px] h-[200px]">
+                <Image
+                  src={Hero4}
+                  alt="Logo"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className=" rounded-[25px] overflow-hidden w-[200px] h-[200px]">
+                <Image
+                  src={Hero6}
+                  alt="Logo"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className=" rounded-[25px] overflow-hidden w-[70px] h-[200px]">
+                <Image
+                  src={Hero5}
+                  alt="Logo"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -96,7 +144,9 @@ const Home = () => {
         <div className="space-y-[60px]">
           <div className="grid grid-cols-3 gap-[30px]">
             <div className="flex items-center flex-col">
-              <Image src={icon1} alt="Icon" />
+              <div className="bg-[#FEE2E2] rounded-full border-8 border-[#FEF2F2] p-2">
+                <Mail />
+              </div>
               <h3 className="font-semibold text-[20px]">Share team inboxes</h3>
               <p className="text-[16px] text-center text-[#667085]">
                 Whether you have a team of 2 or 200, our shared team inboxes
@@ -104,7 +154,9 @@ const Home = () => {
               </p>
             </div>
             <div className="flex items-center flex-col">
-              <Image src={icon2} alt="Icon" />
+              <div className="bg-[#FEE2E2] rounded-full border-8 border-[#FEF2F2] p-2">
+                <Zap />
+              </div>
               <h3 className="font-semibold text-[20px]">
                 Deliver instant answers
               </h3>
@@ -114,7 +166,9 @@ const Home = () => {
               </p>
             </div>
             <div className="flex items-center flex-col">
-              <Image src={icon3} alt="Icon" />
+              <div className="bg-[#FEE2E2] rounded-full border-8 border-[#FEF2F2] p-2">
+                <BarChart2 />
+              </div>
               <h3 className="font-semibold text-[20px]">
                 Manage your team with reports
               </h3>
@@ -127,7 +181,9 @@ const Home = () => {
           </div>
           <div className="grid grid-cols-3 gap-[30px]">
             <div className="flex items-center flex-col">
-              <Image src={icon4} alt="Icon" />
+              <div className="bg-[#FEE2E2] rounded-full border-8 border-[#FEF2F2] p-2">
+                <Smile />
+              </div>
               <h3 className="font-semibold text-[20px]">
                 Connect with customers
               </h3>
@@ -138,7 +194,9 @@ const Home = () => {
               </p>
             </div>
             <div className="flex items-center flex-col">
-              <Image src={icon5} alt="Icon" />
+              <div className="bg-[#FEE2E2] rounded-full border-8 border-[#FEF2F2] p-2">
+                <Waypoints />
+              </div>
               <h3 className="font-semibold text-[20px]">
                 Connect the tools you already use
               </h3>
@@ -149,7 +207,9 @@ const Home = () => {
               </p>
             </div>
             <div className="flex items-center flex-col">
-              <Image src={icon6} alt="Icon" />
+              <div className="bg-[#FEE2E2] rounded-full border-8 border-[#FEF2F2] p-2">
+                <MessageCircleQuestion />
+              </div>
               <h3 className="font-semibold text-[20px]">
                 Our people make the difference
               </h3>
@@ -162,10 +222,12 @@ const Home = () => {
           </div>
         </div>
 
-        <Button size="lg" className="bg-[#018870] text-white">
-          See the current openings
-          <ArrowUp size="22" className="rotate-45" />
-        </Button>
+        <Link href="/jobs">
+          <Button size="lg" className="bg-[#018870] text-white">
+            See the current openings
+            <ArrowUpRight />
+          </Button>
+        </Link>
       </section>
       <div className="flex h-[370px] text-white ">
         <div
@@ -224,11 +286,12 @@ const Home = () => {
             <p className="text-[#018870] text-[13px]">Tech</p>
           </div>
         </div>
-
-        <Button size="lg" className="bg-[#018870] text-white">
-          Read All Blogs
-          <ArrowUp size="22" className="rotate-45" />
-        </Button>
+        <Link href="/about">
+          <Button size="lg" className="bg-[#018870] text-white">
+            Read All Blogs
+            <ArrowUpRight />
+          </Button>
+        </Link>
       </section>
 
       <section className="min-h-screen flex flex-col items-center px-[12%] py-[5%] gap-[60px] bg-[#E6F3F1] mx-auto w-full">
