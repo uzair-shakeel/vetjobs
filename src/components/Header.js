@@ -73,7 +73,7 @@ const Header = () => {
         </nav>
       </header>
       <div
-        className={`lg:hidden bg-[#E6F3F1] pb-4 px-10 lg:px-20 transition-all duration-300 ${
+        className={`lg:hidden bg-[#E6F3F1] pb-4 px-6 md:px-10 lg:px-8 transition-all duration-300 ${
           mobileNavActive ? "top-0" : "-top-full"
         } fixed left-0 w-full z-40`}
       >
