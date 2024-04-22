@@ -10,14 +10,14 @@ import LinkedIn from "../../public/social/linkedin.svg";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col lg:flex-row justify-between gap-6 border-b border-[#171848]/10 py-4 px-10 ">
-      <div className="lg:max-w-[45%]  px-[5%] space-y-[25px]  md:border-r border-[#171848]/10 pr-4">
+    <footer className="flex flex-col lg:flex-row justify-between gap-6 border-b border-[#171848]/10 py-6 px-6 md:px-10 ">
+      <div className="lg:max-w-[45%]   space-y-[25px]  md:border-r border-[#171848]/10 pr-4">
         <div className="flex font-bold">
           <Image src={Logo} alt="Logo" className="w-[48px] h-[48px]" />
           Logo <br />
           Here
         </div>
-        <p>
+        <p className="w-full md:w-[50%] lg:w-full">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore.
         </p>
@@ -29,7 +29,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row  w-full px-[5%]">
+      <div className="flex flex-col md:flex-row  w-full ">
         <div className="grid grid-cols-1 gap-3 md:grid-cols-3 w-full">
           <div>
             <h4 className="text-[18px] font-semibold py-3">For Employee</h4>
