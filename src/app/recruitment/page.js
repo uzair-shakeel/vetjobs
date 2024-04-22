@@ -66,7 +66,7 @@ const page = () => {
             </div>
             <div className="px-6 pt-6 rounded-lg  rounded-tr-[30%]">
               <div className="rounded-lg rounded-tr-[60%] rounded-tl-[20%] h-14 w-14 flex items-center justify-center bg-[#E9F3F1]">
-                <notebook src={happy} className=" text-[#018870] p-1" />
+                <Image src={notebook} className=" text-[#018870] p-1" />
               </div>
               <h1 className="font-semibold text-[20px] py-3">
                 Outsource Reached
@@ -109,7 +109,7 @@ const page = () => {
           </div>
         </div>
       </div>
-      <section className="min-h-screen flex flex-col items-center px-[4%] py-[5%] gap-[60px] bg-[#E6F3F1] mx-auto w-full">
+      <section className="min-h-screen  flex flex-col items-center px-[12%] md:px-[8%] lg:px-[4%] py-[5%] gap-[60px] bg-[#E6F3F1] mx-auto w-full">
         <div className="space-y-5 flex items-center flex-col">
           <div className="relative">
             <Image
@@ -122,10 +122,12 @@ const page = () => {
           </div>
         </div>
         <div className="space-y-[60px]">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-[30px]">
+          <div className="grid grid-cols-1 grid-rows-6 md:grid-cols-2 md:grid-rows-3 lg:grid-cols-3 lg:grid-rows-2 gap-[30px]">
             <div className="flex items-center flex-col">
               <Image src={icon1} alt="Icon" />
-              <h3 className="font-semibold text-[20px]">Share team inboxes</h3>
+              <h3 className="font-semibold text-center text-[20px]">
+                Share team inboxes
+              </h3>
               <p className="text-[16px] text-center text-[#667085]">
                 Whether you have a team of 2 or 200, our shared team inboxes
                 keep everyone on the same page and in the loop.
@@ -133,7 +135,7 @@ const page = () => {
             </div>
             <div className="flex items-center flex-col">
               <Image src={icon2} alt="Icon" />
-              <h3 className="font-semibold text-[20px]">
+              <h3 className="font-semibold text-center text-[20px]">
                 Deliver instant answers
               </h3>
               <p className="text-[16px] text-center text-[#667085]">
@@ -143,7 +145,7 @@ const page = () => {
             </div>
             <div className="flex items-center flex-col">
               <Image src={icon3} alt="Icon" />
-              <h3 className="font-semibold text-[20px]">
+              <h3 className="font-semibold text-center text-[20px]">
                 Manage your team with reports
               </h3>
               <p className="text-[16px] text-center text-[#667085]">
@@ -152,8 +154,7 @@ const page = () => {
                 clicks.
               </p>
             </div>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-[30px]">
+
             <div className="flex items-center flex-col">
               <Image src={icon4} alt="Icon" />
               <h3 className="font-semibold text-[20px]">
@@ -167,7 +168,7 @@ const page = () => {
             </div>
             <div className="flex items-center flex-col">
               <Image src={icon5} alt="Icon" />
-              <h3 className="font-semibold text-[20px]">
+              <h3 className="font-semibold text-center text-[20px]">
                 Connect the tools you already use
               </h3>
               <p className="text-[16px] text-center text-[#667085]">
@@ -178,7 +179,7 @@ const page = () => {
             </div>
             <div className="flex items-center flex-col">
               <Image src={icon6} alt="Icon" />
-              <h3 className="font-semibold text-[20px]">
+              <h3 className="font-semibold text-center text-[20px]">
                 Our people make the difference
               </h3>
               <p className="text-[16px] text-center text-[#667085]">
@@ -197,17 +198,19 @@ const page = () => {
       </section>
       <LogoScroller />
 
-      <section className="px-[10%]">
+      <section className="px-[2%] md:px-[3%] lg:px-[10%]">
         <Reviews />
       </section>
 
-      <section className="px-[4%] md:px-[10%] py-[4%] grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div className="space-y-2 flex flex-col justify-center">
-          <p className="text-[#018870] font-semibold text-[16px]">Contact Us</p>
+      <section className="px-[4%] lg:px-[7%] py-[12%] md:py-[4%] gap-8 grid grid-cols-1 md:grid-cols-2 ">
+        <div className="space-y-2 flex flex-col justify-center items-center md:items-start">
+          <p className="text-[#018870] font-semibold  text-[16px]">
+            Contact Us
+          </p>
           <h1 className="text-[35px] md:text-[42px] lg:text-[52px] text-center md:text-start font-bold ">
             Contact Form
           </h1>
-          <p>
+          <p className="text-[16px] leading-[40px]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem
             ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -222,14 +225,14 @@ const page = () => {
             </Button>
           </div>
         </div>
-        <div className="shadow-2xl my-6 px-[25px] py-[15px]">
+        <div className="shadow-2xl rounded-lg my-6 px-[25px] py-[15px]">
           <h1 className="text-[40px] font-semibold ">Contact Form</h1>
-          <p className="text-[16px] text-black/80">
+          <p className="text-[13px] lg:text-[16px] text-black/80">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet,
             consectetur adipiscing elit,
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 pt-4">
             <div className="space-y-2">
               <h3 className="font-semibold">Your Name</h3>
               <Input placeholder="Enter your Name" />
@@ -239,7 +242,7 @@ const page = () => {
               <Input placeholder="Enter your Email" />
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 py-5 ">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 py-5 ">
             <div className="space-y-2">
               <h3 className="font-semibold">Your Address</h3>
               <Input placeholder="Enter your Address" />
