@@ -1,46 +1,132 @@
-// components/Header.js
-"use client";
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Logo from "../../public/Logo.png";
 import Image from "next/image";
 import { Button } from "@nextui-org/react";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Menu, X } from "lucide-react";
 
 const Header = () => {
+  const [mobileNavActive, setMobileNavActive] = useState(false);
+
+  const toggleMobileNav = () => {
+    setMobileNavActive(!mobileNavActive);
+  };
+
   return (
-    <header>
-      <nav className="flex w-full  justify-between  py-4 px-10 items-center">
-        <div className="flex font-bold">
-          <Image src={Logo} alt="Logo" className="w-[48px] h-[48px]" />
-          Logo <br />
-          Here
-        </div>
-        <ul className="hidden lg:flex gap-6 items-center font-semibold">
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/about">About</Link>
-          </li>
-          <li>
-            <Link href="/">Reviews</Link>
-          </li>
-          <li>
-            <Link href="/jobs">My Clients</Link>
-          </li>
-          <li>
-            <Link href="/jobs">Contacts</Link>
-          </li>
-          <Link href="/jobs">
-            <Button size="lg" className="bg-[#018870] text-white">
-              See the current openings
-              <ArrowUpRight />
-            </Button>
+    <>
+      <header className="w-full z-50">
+        <nav className="flex justify-between items-center py-4 px-10 lg:px-8">
+          <div className="flex items-center space-x-2">
+            <Image src={Logo} alt="Logo" className="w-10 h-10" />
+            <span className="font-bold text-xl">Logo Here</span>
+          </div>
+          <div className="block lg:hidden">
+            {mobileNavActive ? (
+              <button
+                onClick={toggleMobileNav}
+                className="text-white text-2xl focus:outline-none"
+              >
+                <X />
+              </button>
+            ) : (
+              <button
+                onClick={toggleMobileNav}
+                className="text-2xl focus:outline-none"
+              >
+                <Menu />
+              </button>
+            )}
+          </div>
+          <ul className="hidden lg:flex gap-6 items-center font-semibold">
+            <li>
+              <Link href="/">
+                <span className=" cursor-pointer">Home</span>
+              </Link>
+            </li>
+            <li>
+              <Link href="/about">
+                <span className="cursor-pointer">About</span>
+              </Link>
+            </li>
+            <li>
+              <Link href="/">
+                <span className="cursor-pointer">Reviews</span>
+              </Link>
+            </li>
+            <li>
+              <Link href="/jobs">
+                <span className="cursor-pointer">My Clients</span>
+              </Link>
+            </li>
+            <li>
+              <Link href="/jobs">
+                <span className="cursor-pointer">Contacts</span>
+              </Link>
+            </li>
+            <Link href="/jobs">
+              <Button size="lg" className="bg-[#018870] text-white">
+                See the current openings
+                <ArrowUpRight />
+              </Button>
+            </Link>
+          </ul>
+        </nav>
+      </header>
+      <div
+        className={`lg:hidden bg-[#E6F3F1] pb-4 px-10 lg:px-20 transition-all duration-300 ${
+          mobileNavActive ? "top-0" : "-top-full"
+        } fixed left-0 w-full z-40`}
+      >
+        <nav className="flex justify-between items-center py-4">
+          <div className="flex items-center space-x-2">
+            <Image src={Logo} alt="Logo" className="w-10 h-10" />
+            <span className="font-bold text-xl">Logo Here</span>
+          </div>
+          <div className="block lg:hidden">
+            {mobileNavActive ? (
+              <button
+                onClick={toggleMobileNav}
+                className=" text-2xl focus:outline-none"
+              >
+                <X />
+              </button>
+            ) : (
+              <button
+                onClick={toggleMobileNav}
+                className="text-2xl focus:outline-none"
+              >
+                <Menu />
+              </button>
+            )}
+          </div>
+        </nav>
+        <div className="flex flex-col gap-6 py-8">
+          <Link href="/">
+            <span className="cursor-pointer">Home</span>
           </Link>
-        </ul>
-      </nav>
-    </header>
+          <Link href="/about">
+            <span className=" cursor-pointer">About</span>
+          </Link>
+          <Link href="/">
+            <span className=" cursor-pointer">Reviews</span>
+          </Link>
+          <Link href="/jobs">
+            <span className=" cursor-pointer">My Clients</span>
+          </Link>
+          <Link href="/jobs">
+            <span className=" cursor-pointer">Contacts</span>
+          </Link>
+          <Button
+            size="lg"
+            className="bg-[#018870] text-white"
+            onClick={toggleMobileNav}
+          >
+            See the current openings
+            <ArrowUpRight />
+          </Button>
+        </div>
+      </div>
+    </>
   );
 };
 
