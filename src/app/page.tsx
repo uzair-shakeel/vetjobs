@@ -47,7 +47,8 @@ const Home = () => {
                     src={illustration}
                     className="absolute -top-5 -right-[45px]"
                   />
-                </span> veterinarian staff and employers
+                </span>{" "}
+                veterinarian staff and employers
               </h1>
 
               <p className="text-[16px] pb-5 text-gray-600 ">
@@ -251,13 +252,13 @@ const Home = () => {
       <section className="lg:min-h-screen flex flex-col gap-[60px] items-center px-[12%] md:py-[5%] py-[10%]">
         <div className="text-center">
           <p className="text-[14px] text-[#018870]">Learn New Things</p>
-            <h3 className="text-[35px] md:text-[42px] font-bold relative">
-              <Image
-                src={illustration}
-                className="absolute rotate-[-63deg] -top-8 -left-7"
-              />
-              Read our blog
-            </h3>
+          <h3 className="text-[35px] md:text-[42px] font-bold relative">
+            <Image
+              src={illustration}
+              className="absolute rotate-[-63deg] -top-8 -left-7"
+            />
+            Read our blog
+          </h3>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-[5%] pb-4">

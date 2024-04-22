@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import Link from "next/link";
 import Logo from "../../public/Logo.png";
@@ -73,7 +74,7 @@ const Header = () => {
         </nav>
       </header>
       <div
-        className={`lg:hidden bg-[#E6F3F1] pb-4 px-6 md:px-10 lg:px-8 transition-all duration-300 ${
+        className={`lg:hidden bg-[#E6F3F1] pb-4 pt-2 px-6 md:px-10 lg:px-8 transition-all duration-300 ${
           mobileNavActive ? "top-0" : "-top-full"
         } fixed left-0 w-full z-40`}
       >
