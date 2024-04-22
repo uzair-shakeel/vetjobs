@@ -223,7 +223,7 @@ const Home = () => {
           </Button>
         </Link>
       </section>
-      <div className="flex h-[230px] md:h-[320px] lg:h-[370px] text-white ">
+      <div className="flex w-screen overflow-hidden h-[230px] md:h-[320px] lg:h-[370px] text-white ">
         <div
           className="bg-cover h-full w-full min-w-[30%] flex flex-col text-center lg:flex-row gap-[5%] items-center justify-center"
           style={{ backgroundImage: "url('/BG (1).png')" }}
