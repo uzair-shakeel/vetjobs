@@ -44,6 +44,7 @@ const Home = () => {
                 <span className="relative">
                   Connecting
                   <Image
+                    alt="paw"
                     src={illustration}
                     className="absolute -top-5 -right-[45px]"
                   />
@@ -124,6 +125,7 @@ const Home = () => {
         <div className="space-y-5 flex items-center flex-col">
           <h1 className="relative text-[27px] text-center md:text-[42px]  font-bold">
             <Image
+              alt="paw"
               src={illustration}
               className=" absolute -top-5 -right-[43px]"
             />
@@ -254,6 +256,7 @@ const Home = () => {
           <p className="text-[14px] text-[#018870]">Learn New Things</p>
           <h3 className="text-[35px] md:text-[42px] font-bold relative">
             <Image
+              alt="paw"
               src={illustration}
               className="absolute rotate-[-63deg] -top-8 -left-7"
             />

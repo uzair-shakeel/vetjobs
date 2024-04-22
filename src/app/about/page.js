@@ -25,9 +25,10 @@ const page = () => {
       <Layout>
         <section className="">
           <div className="bg-[#E6F3F1] min-h-[300px] flex items-center h-full justify-center">
-            <div>             
+            <div>
               <h1 className="relative w-full max-w-[300px] mx-auto text-[52px] text-center leading-[62px] font-bold">
                 <Image
+                  alt="paw"
                   src={illustration}
                   className="absolute -top-6 -right-2"
                 />

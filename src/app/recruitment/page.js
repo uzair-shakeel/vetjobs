@@ -25,6 +25,7 @@ const page = () => {
           <h1 className="relative text-[30px] md:text-[52px] text-center leading-[62px] font-bold">
             Recruitment Services
             <Image
+              alt="paw"
               src={illustration}
               className="absolute -top-6 -right-3 md:block hidden"
             />
