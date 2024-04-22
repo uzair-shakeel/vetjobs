@@ -40,15 +40,15 @@ const Home = () => {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           <div className="  h-full ">
             <div className=" flex justify-center h-full flex-col">
-              <div className="relative ">
-                <Image
-                  src={illustration}
-                  className="absolute hidden lg:block lg:right-[180px] right-[70px] top-[-40px] lg:top-[-40px]"
-                />
-                <h1 className="text-[35px] leading-[40px] lg:text-[52px] py-3 lg:leading-[62px] text-[#171848] font-bold">
-                  Connecting veterinarian staff <br /> and employers
-                </h1>
-              </div>
+              <h1 className="text-[35px] relative w-full max-w-[400px] lg:max-w-[474px] lg:text-[52px] py-3 lg:leading-[62px] text-[#171848] font-bold">
+                <span className="relative">
+                  Connecting
+                  <Image
+                    src={illustration}
+                    className="absolute -top-5 -right-[45px]"
+                  />
+                </span> veterinarian staff and employers
+              </h1>
 
               <p className="text-[16px] pb-5 text-gray-600 ">
                 Clarity gives you the blocks & components you need to create a
@@ -121,16 +121,13 @@ const Home = () => {
 
       <section className="min-h-screen flex flex-col items-center px-[4%] py-[5%] gap-[60px] bg-[#E6F3F1] mx-auto w-full">
         <div className="space-y-5 flex items-center flex-col">
-          <div className="relative">
+          <h1 className="relative text-[27px] text-center md:text-[42px]  font-bold">
             <Image
               src={illustration}
-              className="absolute hidden lg:block md:right-[-70px] right-[-10px] top-[-50px] md:top-[-50px]"
+              className=" absolute -top-5 -right-[43px]"
             />
-            <h1 className="text-[35px] text-center  md:text-[42px]  font-bold">
-              Why choose Vetjobs
-            </h1>
-          </div>
-
+            Why choose Vetjobs
+          </h1>
           <div className="flex  gap-2">
             <Button size="lg" className="bg-[#018870] text-white">
               For veterinarian
@@ -254,15 +251,13 @@ const Home = () => {
       <section className="lg:min-h-screen flex flex-col gap-[60px] items-center px-[12%] md:py-[5%] py-[10%]">
         <div className="text-center">
           <p className="text-[14px] text-[#018870]">Learn New Things</p>
-          <div className="relative">
-            <Image
-              src={illustration}
-              className="absolute hidden lg:block md:left-[-70px] left-[-80px] rotate-[-90deg] md:top-[-60px] top-[-60px]"
-            />
-            <h3 className="text-[35px] md:text-[42px] font-bold">
+            <h3 className="text-[35px] md:text-[42px] font-bold relative">
+              <Image
+                src={illustration}
+                className="absolute rotate-[-63deg] -top-8 -left-7"
+              />
               Read our blog
             </h3>
-          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-[5%] pb-4">
