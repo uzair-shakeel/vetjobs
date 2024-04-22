@@ -16,17 +16,18 @@ const jobs = () => {
   return (
     <div>
       <Header />
-      <section className="bg-[#E6F3F1] min-h-[300px] relative  mx-[2%]">
+      <section className="bg-[#E6F3F1] sm:min-h-[330px] min-h-[360px] relative  mx-[2%]">
         <div className="relative  translate-y-[50%]">
-          <Image
-            src={illustration}
-            className="absolute right-[260px] top-[-60px]"
-          />
-          <h1 className="text-[52px] text-center leading-[62px] font-bold">
-            Find the perfect Job <br /> Only for you
+          <h1 className=" relative text-[35px] sm:text-[52px] max-w-[600px] w-full mx-auto text-center leading-[62px] font-bold">
+            <span className="relative">
+              <Image
+                src={illustration}
+                className="absolute -top-5 -right-10 sm:block hidden"
+              />
+              Find the perfect Job</span> Only for you
           </h1>
         </div>
-        <div className="bg-white shadow-md w-[95%] rounded-md py-5 px-4 absolute bottom-[-60px] right-0 left-0 mx-auto">
+        <div className="bg-white shadow-md w-[95%] rounded-md py-5 px-4 absolute bottom-[-60px] lg:bottom-[-60px] right-0 left-0 mx-auto">
           <div className="flex flex-col md:flex-row gap-2 md:gap-5">
             <Input
               placeholder="Vet Assistant"

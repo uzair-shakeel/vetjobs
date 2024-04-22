@@ -22,14 +22,12 @@ const page = () => {
     <Layout>
       <div className="bg-[#E6F3F1] min-h-[300px] flex items-center h-full justify-center">
         <div>
-          <div className="relative">
+          <h1 className="relative text-[30px] md:text-[52px] text-center leading-[62px] font-bold">
+            Recruitment Services
             <Image
               src={illustration}
-              className="absolute md:right-[-60px] right-[10px] top-[-35px] md:top-[-50px]"
+              className="absolute -top-6 -right-3 md:block hidden"
             />
-          </div>
-          <h1 className="text-[35px] md:text-[42px] lg:text-[52px] p-4  text-center  font-bold">
-            Recruitment Services
           </h1>
           <p className="text-[16px]  text-center">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

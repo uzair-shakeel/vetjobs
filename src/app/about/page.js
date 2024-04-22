@@ -25,14 +25,12 @@ const page = () => {
       <Layout>
         <section className="">
           <div className="bg-[#E6F3F1] min-h-[300px] flex items-center h-full justify-center">
-            <div>
-              <div className="relative">
+            <div>             
+              <h1 className="relative w-full max-w-[300px] mx-auto text-[52px] text-center leading-[62px] font-bold">
                 <Image
                   src={illustration}
-                  className="absolute md:right-[190px] right-[20px] top-[-45px] md:top-[-50px]"
+                  className="absolute -top-6 -right-2"
                 />
-              </div>
-              <h1 className="text-[35px] md:text-[42px] lg:text-[52px] text-center leading-[62px] font-bold">
                 About Us
               </h1>
               <p className="text-[16px] p-4 text-center">
