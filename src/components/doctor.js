@@ -2,7 +2,7 @@ import React from "react";
 import pic from "../../public/doctor.png";
 import { Button } from "@nextui-org/react";
 import Image from "next/image";
-import { MdArrowOutward } from "react-icons/md";
+import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 
 const Doctor = () => {
@@ -19,7 +19,7 @@ const Doctor = () => {
       />
       <Link href="/recruitment">
         <Button className="bg-[#018870] text-base font-semibold h-[50px] w-[233px] rounded-lg text-white">
-          Register to post a job <MdArrowOutward />
+          Register to post a job <ArrowUpRight />
         </Button>
       </Link>
     </div>

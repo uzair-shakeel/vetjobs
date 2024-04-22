@@ -2,7 +2,6 @@
 import React from "react";
 import avatar from "../../../public/Avatar.png";
 import Image from "next/image";
-import { Call, Car, Clock } from "iconsax-react";
 import { Button } from "@nextui-org/react";
 import Ghost from "../../../public/ghost.svg";
 import Layout from "../../components/Layout";
@@ -18,8 +17,8 @@ const page = () => {
   return (
     <>
       <Layout>
-        <section className="flex px-[10%] gap-[10%] py-[20px]">
-          <div className="px-4 py-7 w-[75%]">
+        <section className="flex flex-col lg:flex-row px-[5%] md:px-[10%] gap-[10%] py-[20px]">
+          <div className="px-4 py-7 lg:w-[75%]">
             <div className="space-y-2 py-3">
               <h1 className="text-[32px] leading=[54px] font-bold">
                 Graphic Design
@@ -32,7 +31,7 @@ const page = () => {
 
             <div className="py-3">
               <h4 className="font-semibold text-[20px] py-3">Job details</h4>
-              <div className="flex justify-between w-full text-[14px] text-black/60">
+              <div className="flex flex-col md:flex-row justify-between w-full text-[14px] text-black/60">
                 <div className="flex items-center gap-4">
                   Job Type
                   <div className="bg-[#F9F7FD] rounded-full flex gap-2 text-black font-semibold items-center justify-center py-1 px-2">
@@ -59,99 +58,99 @@ const page = () => {
               <h4 className="font-semibold text-[20px] py-3">About the Job</h4>
               <div className="space-y-[30px]">
                 <div>
-                  <h4 className="font-semibold text-[16px] py-3">
+                  <h4 className="font-semibold text-[14px] md:text-[16px] py-3">
                     Shift Details
                   </h4>
                   <table className="w-full">
                     <tbody>
                       <tr className=" py-4">
                         <td className=" ">
-                          <p className="flex items-center gap-2 text-[16px] text-black/80">
+                          <p className="flex items-center gap-2 text-[12px] md:text-[16px] text-black/80">
                             <Image src={ClockIcon} /> Monday
                           </p>
                         </td>
-                        <td className="  text-[16px] text-black/80">
+                        <td className="  text-[12px] md:text-[16px] text-black/80">
                           29 dec, 2024
                         </td>
-                        <td className="  text-[16px] text-black/80">
+                        <td className="  text-[12px] md:text-[16px] text-black/80">
                           09:00am - 05:00pm
                         </td>
                       </tr>
                       <tr className=" py-4">
                         <td className=" ">
-                          <p className="flex items-center gap-2 text-[16px] text-black/80">
+                          <p className="flex items-center gap-2 text-[12px] md:text-[16px] text-black/80">
                             <Image src={ClockIcon} /> Tuesday
                           </p>
                         </td>
-                        <td className="  text-[16px] text-black/80">
+                        <td className="  text-[12px] md:text-[16px] text-black/80">
                           29 dec, 2024
                         </td>
-                        <td className="  text-[16px] text-black/80">
+                        <td className="  text-[12px] md:text-[16px] text-black/80">
                           09:00am - 05:00pm
                         </td>
                       </tr>
                       <tr className=" py-4">
                         <td className=" ">
-                          <p className="flex items-center gap-2 text-[16px] text-black/80">
+                          <p className="flex items-center gap-2 text-[12px] md:text-[16px] text-black/80">
                             <Image src={ClockIcon} /> Wednesday
                           </p>
                         </td>
-                        <td className="  text-[16px] text-black/80">
+                        <td className="  text-[12px] md:text-[16px] text-black/80">
                           29 dec, 2024
                         </td>
-                        <td className="  text-[16px] text-black/80">
+                        <td className="  text-[12px] md:text-[16px] text-black/80">
                           09:00am - 05:00pm
                         </td>
                       </tr>
                       <tr className=" py-4">
                         <td className=" ">
-                          <p className="flex items-center gap-2 text-[16px] text-black/80">
+                          <p className="flex items-center gap-2 text-[12px] md:text-[16px] text-black/80">
                             <Image src={ClockIcon} /> Thursday
                           </p>
                         </td>
-                        <td className="  text-[16px] text-black/80">
+                        <td className="  text-[12px] md:text-[16px] text-black/80">
                           29 dec, 2024
                         </td>
-                        <td className="  text-[16px] text-black/80">
+                        <td className="  text-[12px] md:text-[16px] text-black/80">
                           09:00am - 05:00pm
                         </td>
                       </tr>
                       <tr className=" py-4">
                         <td className=" ">
-                          <p className="flex items-center gap-2 text-[16px] text-black/80">
+                          <p className="flex items-center gap-2 text-[12px] md:text-[16px] text-black/80">
                             <Image src={ClockIcon} /> Friday
                           </p>
                         </td>
-                        <td className="  text-[16px] text-black/80">
+                        <td className="  text-[12px] md:text-[16px] text-black/80">
                           29 dec, 2024
                         </td>
-                        <td className="  text-[16px] text-black/80">
+                        <td className="  text-[12px] md:text-[16px] text-black/80">
                           09:00am - 05:00pm
                         </td>
                       </tr>
                       <tr className=" py-4">
                         <td className=" ">
-                          <p className="flex items-center gap-2 text-[16px] text-black/80">
+                          <p className="flex items-center gap-2 text-[12px] md:text-[16px] text-black/80">
                             <Image src={ClockIcon} /> Saturday
                           </p>
                         </td>
-                        <td className="  text-[16px] text-black/80">
+                        <td className="  text-[12px] md:text-[16px] text-black/80">
                           29 dec, 2024
                         </td>
-                        <td className="  text-[16px] text-black/80">
+                        <td className="  text-[12px] md:text-[16px] text-black/80">
                           09:00am - 05:00pm
                         </td>
                       </tr>
                       <tr className=" py-4">
                         <td className=" ">
-                          <p className="flex items-center gap-2 text-[16px] text-black/80">
+                          <p className="flex items-center gap-2 text-[12px] md:text-[16px] text-black/80">
                             <Image src={ClockIcon} /> Sunday
                           </p>
                         </td>
-                        <td className="  text-[16px] text-black/80">
+                        <td className="  text-[12px] md:text-[16px] text-black/80">
                           29 dec, 2024
                         </td>
-                        <td className="  text-[16px] font-semibold text-red-500">
+                        <td className="  text-[12px] md:text-[16px] font-semibold text-red-500">
                           closed
                         </td>
                       </tr>
@@ -160,10 +159,10 @@ const page = () => {
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-[16px] py-3">
+                  <h4 className="font-semibold text-[12px] md:text-[16px] py-3">
                     About the Job
                   </h4>
-                  <p className="text-[16px] text-black/80">
+                  <p className="text-[12px] md:text-[16px] text-black/80">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -175,10 +174,10 @@ const page = () => {
                   </p>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-[16px] py-3">
+                  <h4 className="font-semibold text-[12px] md:text-[16px] py-3">
                     About the Job
                   </h4>
-                  <p className="text-[16px] text-black/80">
+                  <p className="text-[12px] md:text-[16px] text-black/80">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis Lorem ipsum dolor sit
@@ -198,10 +197,10 @@ const page = () => {
                   </p>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-[16px] py-3">
+                  <h4 className="font-semibold text-[12px] md:text-[16px] py-3">
                     About the Job
                   </h4>
-                  <p className="text-[16px] text-black/80 leading-[35px]">
+                  <p className="text-[12px] md:text-[16px] text-black/80 leading-[35px]">
                     * Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
                     <br /> * sed do eiusmod tempor incididunt ut labore et
                     dolore magna aliqua. <br />
@@ -216,10 +215,10 @@ const page = () => {
                   </p>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-[16px] py-3">
+                  <h4 className="font-semibold text-[12px] md:text-[16px] py-3">
                     Recruiters info
                   </h4>
-                  <p className="text-[16px] text-black/80 leading-[35px]">
+                  <p className="text-[12px] md:text-[16px] text-black/80 leading-[35px]">
                     * Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
                     <br /> * sed do eiusmod tempor incididunt ut labore et
                     dolore magna aliqua. <br />
@@ -251,7 +250,7 @@ const page = () => {
               </div>
             </div>
           </div>
-          <div className="rounded-[15px] max-h-[370px] flex flex-col gap-4 justify-center  w-[30%]  shadow-2xl px-4 py-7 ">
+          <div className="rounded-[15px] max-h-[370px] flex flex-col gap-4 justify-center  w-[75%] md:w-[50%] lg:w-[30%]  shadow-2xl px-4 py-7 ">
             <h3 className="text-[16px font-semibold]">Recruiters info</h3>
             <div
               className="flex gap-2 items-center
@@ -259,7 +258,9 @@ const page = () => {
             >
               <Image src={avatar} className="h-[50px] w-[50px] rounded-full" />
               <div>
-                <h4 className="font-semibold text-[16px]">Usman Zafar</h4>
+                <h4 className="font-semibold text-[12px] md:text-[16px]">
+                  Usman Zafar
+                </h4>
                 <p className="text-[14px]">usmanzafar@gmail.com</p>
               </div>
             </div>

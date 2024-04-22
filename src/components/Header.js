@@ -5,7 +5,6 @@ import Link from "next/link";
 import Logo from "../../public/Logo.png";
 import Image from "next/image";
 import { Button } from "@nextui-org/react";
-import { ArrowUp } from "iconsax-react";
 import { ArrowUpRight } from "lucide-react";
 
 const Header = () => {
@@ -17,7 +16,7 @@ const Header = () => {
           Logo <br />
           Here
         </div>
-        <ul className="flex gap-6 items-center font-semibold">
+        <ul className="hidden lg:flex gap-6 items-center font-semibold">
           <li>
             <Link href="/">Home</Link>
           </li>

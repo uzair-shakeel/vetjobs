@@ -14,7 +14,6 @@ import Blog1 from "../../public/Blog/image (1).png";
 import Blog2 from "../../public/Blog/image (2).png";
 import Blog3 from "../../public/Blog/image (3).png";
 import { Accordion, AccordionItem, Button } from "@nextui-org/react";
-import { ArrowUp } from "iconsax-react";
 import icon1 from "../../public/icons/Featured icon.png";
 import icon2 from "../../public/icons/Featured icon (1).png";
 import icon3 from "../../public/icons/Featured icon (2).png";
@@ -37,16 +36,16 @@ import {
 const Home = () => {
   return (
     <Layout>
-      <section className="min-h-screen pt-[2%]">
+      <section className="lg:min-h-screen pt-[2%] px-[5%]">
         <div className="grid grid-cols-2">
           <div className="  h-full relative">
-            <div className="absolute px-[15%] top-1/2 transform -translate-y-1/2">
+            <div className="absolute  top-1/2 transform -translate-y-1/2">
               <div className="relative">
                 <Image
                   src={illustration}
-                  className="absolute right-[60px] top-[-40px]"
+                  className="absolute lg:right-[60px] right-[10px] top-[-40px] lg:top-[-40px]"
                 />
-                <h1 className="text-[52px] py-3 leading-[62px] text-[#171848] font-bold">
+                <h1 className="text-[35px] leading-[40px] lg:text-[52px] py-3 lg:leading-[62px] text-[#171848] font-bold">
                   Connecting veterinarian staff <br /> and employers
                 </h1>
               </div>
@@ -231,7 +230,7 @@ const Home = () => {
       </section>
       <div className="flex h-[370px] text-white ">
         <div
-          className="bg-cover h-full w-full flex gap-[5%] items-center justify-center"
+          className="bg-cover h-full w-full flex flex-col text-center lg:flex-row gap-[5%] items-center justify-center"
           style={{ backgroundImage: "url('/BG (1).png')" }}
         >
           <div>
@@ -251,7 +250,7 @@ const Home = () => {
         <Image src={image} alt="image" />
       </div>
 
-      <section className="min-h-screen flex flex-col gap-[60px] items-center px-[12%] py-[5%]">
+      <section className="lg:min-h-screen flex flex-col gap-[60px] items-center px-[12%] py-[5%]">
         <div className="text-center">
           <p className="text-[14px] text-[#018870]">Learn New Things</p>
           <div className="relative">
@@ -294,7 +293,7 @@ const Home = () => {
         </Link>
       </section>
 
-      <section className="min-h-screen flex flex-col items-center px-[12%] py-[5%] gap-[60px] bg-[#E6F3F1] mx-auto w-full">
+      <section className="lg:min-h-screen flex flex-col items-center px-[12%] py-[5%] gap-[60px] bg-[#E6F3F1] mx-auto w-full">
         <div className="space-y-5 flex items-center flex-col">
           <h1 className="text-[42px] leading-[62px] font-bold">
             Frequently asked questions

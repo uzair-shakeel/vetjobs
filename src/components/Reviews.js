@@ -7,13 +7,13 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const Reviews = () => {
   return (
-    <div className="bg-[#E6F3F1] flex items-center flex-col rounded-2xl px-[3%] py-[3%]">
+    <div className="bg-[#E6F3F1] hidden lg:flex items-center flex-col rounded-2xl px-[3%] py-[3%]">
       <p className="text-[#018870] font-semibold text-[16px] text-center">
         Our Reviews
       </p>
       <div className="flex gap-6 items-center">
         <ChevronLeft size={35} />
-        <h1 className="text-[52px] font-bold text-center">
+        <h1 className="text-[35px] md:text-[42px] lg:text-[52px] font-bold text-center">
           What Our Clients Say About Us
         </h1>
         <ChevronRight size={35} />

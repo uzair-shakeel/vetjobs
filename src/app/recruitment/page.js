@@ -3,10 +3,6 @@ import React from "react";
 import Layout from "../../components/Layout";
 import Image from "next/image";
 import illustration from "../../../public/Illustration.png";
-import { BsPersonRaisedHand } from "react-icons/bs";
-import { CiMemoPad } from "react-icons/ci";
-import { GiPoliceBadge } from "react-icons/gi";
-import { ArrowUp } from "iconsax-react";
 import icon1 from "../../../public/icons/Featured icon.png";
 import icon2 from "../../../public/icons/Featured icon (1).png";
 import icon3 from "../../../public/icons/Featured icon (2).png";
@@ -29,10 +25,10 @@ const page = () => {
           <div className="relative">
             <Image
               src={illustration}
-              className="absolute right-[-60px] top-[-50px]"
+              className="absolute md:right-[-60px] right-[10px] top-[-35px] md:top-[-50px]"
             />
           </div>
-          <h1 className="text-[52px] text-center leading-[62px] font-bold">
+          <h1 className="text-[35px] md:text-[42px] lg:text-[52px] p-4  text-center  font-bold">
             Recruitment Services
           </h1>
           <p className="text-[16px]  text-center">
@@ -45,14 +41,16 @@ const page = () => {
         <div className="flex flex-col gap-[30px]">
           <div className="flex flex-col justify-center items-center ">
             <p className="text-[#018870] text-[16px]">Our Story</p>
-            <h1 className="text-[52px] font-bold">Here's How It Works</h1>
+            <h1 className="text-[35px] md:text-[42px] lg:text-[52px] text-center font-bold">
+              Here's How It Works
+            </h1>
             <p className="leading-[31px] text-[16px] py-3 w-[80%] text-center text-slate-600">
               rem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
-          <div className="grid grid-cols-4 gap-2">
-            <div className="bg-[#018870] px-6 pt-6 rounded-lg text-white rounded-tr-[30%]">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
+            <div className="bg-[#018870] px-6 pt-6 rounded-lg text-white  rounded-tr-[30%]">
               <div className="rounded-lg rounded-tr-[60%] rounded-tl-[20%] h-14 w-14 flex items-center justify-center bg-white">
                 <Image src={happy} className=" text-[#018870] p-1" />
               </div>
@@ -116,15 +114,15 @@ const page = () => {
           <div className="relative">
             <Image
               src={illustration}
-              className="absolute right-[-70px] top-[-50px]"
+              className="absolute md:right-[-70px] right-[-35px] top-[-30px] md:top-[-50px]"
             />
-            <h1 className="text-[42px] leading-[62px] font-bold">
+            <h1 className="text-[35px] md:text-[42px] text-center p-4 leading-[62px] font-bold">
               Our Benefits For Employees
             </h1>
           </div>
         </div>
         <div className="space-y-[60px]">
-          <div className="grid grid-cols-3 gap-[30px]">
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-[30px]">
             <div className="flex items-center flex-col">
               <Image src={icon1} alt="Icon" />
               <h3 className="font-semibold text-[20px]">Share team inboxes</h3>
@@ -155,7 +153,7 @@ const page = () => {
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-3 gap-[30px]">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-[30px]">
             <div className="flex items-center flex-col">
               <Image src={icon4} alt="Icon" />
               <h3 className="font-semibold text-[20px]">
@@ -203,10 +201,12 @@ const page = () => {
         <Reviews />
       </section>
 
-      <section className="px-[10%] py-[4%] grid grid-cols-2 gap-4">
+      <section className="px-[10%] py-[4%] grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="space-y-2 flex flex-col justify-center">
           <p className="text-[#018870] font-semibold text-[16px]">Contact Us</p>
-          <h1 className="text-[52px] font-bold ">Contact Form</h1>
+          <h1 className="text-[35px] md:text-[42px] lg:text-[52px] text-center font-bold ">
+            Contact Form
+          </h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem
