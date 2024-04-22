@@ -27,7 +27,7 @@ const jobs = () => {
           </h1>
         </div>
         <div className="bg-white shadow-md w-[95%] rounded-md py-5 px-4 absolute bottom-[-60px] right-0 left-0 mx-auto">
-          <div className="flex gap-5">
+          <div className="flex flex-col md:flex-row gap-2 md:gap-5">
             <Input
               placeholder="Vet Assistant"
               endContent={<ChevronDown size={18} />}
@@ -96,7 +96,7 @@ const jobs = () => {
         </div>
 
         <div className="py-8 space-y-[20px] w-full">
-          <div className="grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid px-[5%] gap-[20px]">
+          <div className="grid-cols-1 grid-rows-12 md:grid-cols-2 md:grid-rows-6 lg:grid-cols-3 lg:grid-rows-4 grid px-[5%] gap-[20px]">
             <Link href="/job">
               <div className="shadow-md py-5 px-3 rounded-lg space-y-4">
                 <div>
@@ -123,63 +123,6 @@ const jobs = () => {
                 </div>
               </div>
             </Link>
-
-            <Link href="/job">
-              <div className="hidden md:grid shadow-md py-5 px-3 rounded-lg space-y-4">
-                <div>
-                  <div className="flex justify-between text-[20px] font-semibold">
-                    <h3>Vet Manager</h3>
-                    <p className="text-[14px] text-[#14B8A6]">03-24-2023</p>
-                  </div>
-                  <p className="text-[14px] text-slate-500">Sanderson 812 NT</p>
-                </div>
-                <p className="text-[14px] text-slate-600">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore.
-                </p>
-                <div className="flex gap-2 text-[12px]">
-                  <div className="bg-[#F0F6F5] rounded-full flex px-4 gap-2  font-semibold items-center justify-center p-2">
-                    <Image src={ClockIcon} /> Full time
-                  </div>
-                  <div className="bg-[#F0F6F5] rounded-full flex gap-2 px-4  font-semibold items-center justify-center p-2">
-                    <Image src={CashIcon} /> 10 - 20
-                  </div>
-                  <div className="bg-[#F0F6F5] rounded-full font-semibold px-4 flex gap-2 items-center justify-center p-2">
-                    <Image src={CarIcon} /> 5km
-                  </div>
-                </div>
-              </div>
-            </Link>
-
-            <Link href="/job">
-              <div className="hidden lg:grid shadow-md py-5 px-3 rounded-lg space-y-4">
-                <div>
-                  <div className="flex justify-between text-[20px] font-semibold">
-                    <h3>Vet Manager</h3>
-                    <p className="text-[14px] text-[#14B8A6]">03-24-2023</p>
-                  </div>
-                  <p className="text-[14px] text-slate-500">Sanderson 812 NT</p>
-                </div>
-                <p className="text-[14px] text-slate-600">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore.
-                </p>
-                <div className="flex gap-2 text-[12px]">
-                  <div className="bg-[#F0F6F5] rounded-full flex px-4 gap-2  font-semibold items-center justify-center p-2">
-                    <Image src={ClockIcon} /> Full time
-                  </div>
-                  <div className="bg-[#F0F6F5] rounded-full flex gap-2 px-4  font-semibold items-center justify-center p-2">
-                    <Image src={CashIcon} /> 10 - 20
-                  </div>
-                  <div className="bg-[#F0F6F5] rounded-full font-semibold px-4 flex gap-2 items-center justify-center p-2">
-                    <Image src={CarIcon} /> 5km
-                  </div>
-                </div>
-              </div>
-            </Link>
-          </div>
-
-          <div className="grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid px-[5%] gap-[20px]">
             <Link href="/job">
               <div className="shadow-md py-5 px-3 rounded-lg space-y-4">
                 <div>
@@ -206,63 +149,6 @@ const jobs = () => {
                 </div>
               </div>
             </Link>
-
-            <Link href="/job">
-              <div className="hidden md:grid shadow-md py-5 px-3 rounded-lg space-y-4">
-                <div>
-                  <div className="flex justify-between text-[20px] font-semibold">
-                    <h3>Vet Manager</h3>
-                    <p className="text-[14px] text-[#14B8A6]">03-24-2023</p>
-                  </div>
-                  <p className="text-[14px] text-slate-500">Sanderson 812 NT</p>
-                </div>
-                <p className="text-[14px] text-slate-600">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore.
-                </p>
-                <div className="flex gap-2 text-[12px]">
-                  <div className="bg-[#F0F6F5] rounded-full flex px-4 gap-2  font-semibold items-center justify-center p-2">
-                    <Image src={ClockIcon} /> Full time
-                  </div>
-                  <div className="bg-[#F0F6F5] rounded-full flex gap-2 px-4  font-semibold items-center justify-center p-2">
-                    <Image src={CashIcon} /> 10 - 20
-                  </div>
-                  <div className="bg-[#F0F6F5] rounded-full font-semibold px-4 flex gap-2 items-center justify-center p-2">
-                    <Image src={CarIcon} /> 5km
-                  </div>
-                </div>
-              </div>
-            </Link>
-
-            <Link href="/job">
-              <div className="hidden lg:grid shadow-md py-5 px-3 rounded-lg space-y-4">
-                <div>
-                  <div className="flex justify-between text-[20px] font-semibold">
-                    <h3>Vet Manager</h3>
-                    <p className="text-[14px] text-[#14B8A6]">03-24-2023</p>
-                  </div>
-                  <p className="text-[14px] text-slate-500">Sanderson 812 NT</p>
-                </div>
-                <p className="text-[14px] text-slate-600">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore.
-                </p>
-                <div className="flex gap-2 text-[12px]">
-                  <div className="bg-[#F0F6F5] rounded-full flex px-4 gap-2  font-semibold items-center justify-center p-2">
-                    <Image src={ClockIcon} /> Full time
-                  </div>
-                  <div className="bg-[#F0F6F5] rounded-full flex gap-2 px-4  font-semibold items-center justify-center p-2">
-                    <Image src={CashIcon} /> 10 - 20
-                  </div>
-                  <div className="bg-[#F0F6F5] rounded-full font-semibold px-4 flex gap-2 items-center justify-center p-2">
-                    <Image src={CarIcon} /> 5km
-                  </div>
-                </div>
-              </div>
-            </Link>
-          </div>
-
-          <div className="grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid px-[5%] gap-[20px]">
             <Link href="/job">
               <div className="shadow-md py-5 px-3 rounded-lg space-y-4">
                 <div>
@@ -289,63 +175,6 @@ const jobs = () => {
                 </div>
               </div>
             </Link>
-
-            <Link href="/job">
-              <div className="hidden md:grid shadow-md py-5 px-3 rounded-lg space-y-4">
-                <div>
-                  <div className="flex justify-between text-[20px] font-semibold">
-                    <h3>Vet Manager</h3>
-                    <p className="text-[14px] text-[#14B8A6]">03-24-2023</p>
-                  </div>
-                  <p className="text-[14px] text-slate-500">Sanderson 812 NT</p>
-                </div>
-                <p className="text-[14px] text-slate-600">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore.
-                </p>
-                <div className="flex gap-2 text-[12px]">
-                  <div className="bg-[#F0F6F5] rounded-full flex px-4 gap-2  font-semibold items-center justify-center p-2">
-                    <Image src={ClockIcon} /> Full time
-                  </div>
-                  <div className="bg-[#F0F6F5] rounded-full flex gap-2 px-4  font-semibold items-center justify-center p-2">
-                    <Image src={CashIcon} /> 10 - 20
-                  </div>
-                  <div className="bg-[#F0F6F5] rounded-full font-semibold px-4 flex gap-2 items-center justify-center p-2">
-                    <Image src={CarIcon} /> 5km
-                  </div>
-                </div>
-              </div>
-            </Link>
-
-            <Link href="/job">
-              <div className="hidden lg:grid shadow-md py-5 px-3 rounded-lg space-y-4">
-                <div>
-                  <div className="flex justify-between text-[20px] font-semibold">
-                    <h3>Vet Manager</h3>
-                    <p className="text-[14px] text-[#14B8A6]">03-24-2023</p>
-                  </div>
-                  <p className="text-[14px] text-slate-500">Sanderson 812 NT</p>
-                </div>
-                <p className="text-[14px] text-slate-600">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore.
-                </p>
-                <div className="flex gap-2 text-[12px]">
-                  <div className="bg-[#F0F6F5] rounded-full flex px-4 gap-2  font-semibold items-center justify-center p-2">
-                    <Image src={ClockIcon} /> Full time
-                  </div>
-                  <div className="bg-[#F0F6F5] rounded-full flex gap-2 px-4  font-semibold items-center justify-center p-2">
-                    <Image src={CashIcon} /> 10 - 20
-                  </div>
-                  <div className="bg-[#F0F6F5] rounded-full font-semibold px-4 flex gap-2 items-center justify-center p-2">
-                    <Image src={CarIcon} /> 5km
-                  </div>
-                </div>
-              </div>
-            </Link>
-          </div>
-
-          <div className="grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid px-[5%] gap-[20px]">
             <Link href="/job">
               <div className="shadow-md py-5 px-3 rounded-lg space-y-4">
                 <div>
@@ -372,9 +201,8 @@ const jobs = () => {
                 </div>
               </div>
             </Link>
-
             <Link href="/job">
-              <div className="hidden md:grid shadow-md py-5 px-3 rounded-lg space-y-4">
+              <div className="shadow-md py-5 px-3 rounded-lg space-y-4">
                 <div>
                   <div className="flex justify-between text-[20px] font-semibold">
                     <h3>Vet Manager</h3>
@@ -399,9 +227,164 @@ const jobs = () => {
                 </div>
               </div>
             </Link>
-
             <Link href="/job">
-              <div className="hidden lg:grid shadow-md py-5 px-3 rounded-lg space-y-4">
+              <div className="shadow-md py-5 px-3 rounded-lg space-y-4">
+                <div>
+                  <div className="flex justify-between text-[20px] font-semibold">
+                    <h3>Vet Manager</h3>
+                    <p className="text-[14px] text-[#14B8A6]">03-24-2023</p>
+                  </div>
+                  <p className="text-[14px] text-slate-500">Sanderson 812 NT</p>
+                </div>
+                <p className="text-[14px] text-slate-600">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore.
+                </p>
+                <div className="flex gap-2 text-[12px]">
+                  <div className="bg-[#F0F6F5] rounded-full flex px-4 gap-2  font-semibold items-center justify-center p-2">
+                    <Image src={ClockIcon} /> Full time
+                  </div>
+                  <div className="bg-[#F0F6F5] rounded-full flex gap-2 px-4  font-semibold items-center justify-center p-2">
+                    <Image src={CashIcon} /> 10 - 20
+                  </div>
+                  <div className="bg-[#F0F6F5] rounded-full font-semibold px-4 flex gap-2 items-center justify-center p-2">
+                    <Image src={CarIcon} /> 5km
+                  </div>
+                </div>
+              </div>
+            </Link>
+            <Link href="/job">
+              <div className="shadow-md py-5 px-3 rounded-lg space-y-4">
+                <div>
+                  <div className="flex justify-between text-[20px] font-semibold">
+                    <h3>Vet Manager</h3>
+                    <p className="text-[14px] text-[#14B8A6]">03-24-2023</p>
+                  </div>
+                  <p className="text-[14px] text-slate-500">Sanderson 812 NT</p>
+                </div>
+                <p className="text-[14px] text-slate-600">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore.
+                </p>
+                <div className="flex gap-2 text-[12px]">
+                  <div className="bg-[#F0F6F5] rounded-full flex px-4 gap-2  font-semibold items-center justify-center p-2">
+                    <Image src={ClockIcon} /> Full time
+                  </div>
+                  <div className="bg-[#F0F6F5] rounded-full flex gap-2 px-4  font-semibold items-center justify-center p-2">
+                    <Image src={CashIcon} /> 10 - 20
+                  </div>
+                  <div className="bg-[#F0F6F5] rounded-full font-semibold px-4 flex gap-2 items-center justify-center p-2">
+                    <Image src={CarIcon} /> 5km
+                  </div>
+                </div>
+              </div>
+            </Link>
+            <Link href="/job">
+              <div className="shadow-md py-5 px-3 rounded-lg space-y-4">
+                <div>
+                  <div className="flex justify-between text-[20px] font-semibold">
+                    <h3>Vet Manager</h3>
+                    <p className="text-[14px] text-[#14B8A6]">03-24-2023</p>
+                  </div>
+                  <p className="text-[14px] text-slate-500">Sanderson 812 NT</p>
+                </div>
+                <p className="text-[14px] text-slate-600">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore.
+                </p>
+                <div className="flex gap-2 text-[12px]">
+                  <div className="bg-[#F0F6F5] rounded-full flex px-4 gap-2  font-semibold items-center justify-center p-2">
+                    <Image src={ClockIcon} /> Full time
+                  </div>
+                  <div className="bg-[#F0F6F5] rounded-full flex gap-2 px-4  font-semibold items-center justify-center p-2">
+                    <Image src={CashIcon} /> 10 - 20
+                  </div>
+                  <div className="bg-[#F0F6F5] rounded-full font-semibold px-4 flex gap-2 items-center justify-center p-2">
+                    <Image src={CarIcon} /> 5km
+                  </div>
+                </div>
+              </div>
+            </Link>
+            <Link href="/job">
+              <div className="shadow-md py-5 px-3 rounded-lg space-y-4">
+                <div>
+                  <div className="flex justify-between text-[20px] font-semibold">
+                    <h3>Vet Manager</h3>
+                    <p className="text-[14px] text-[#14B8A6]">03-24-2023</p>
+                  </div>
+                  <p className="text-[14px] text-slate-500">Sanderson 812 NT</p>
+                </div>
+                <p className="text-[14px] text-slate-600">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore.
+                </p>
+                <div className="flex gap-2 text-[12px]">
+                  <div className="bg-[#F0F6F5] rounded-full flex px-4 gap-2  font-semibold items-center justify-center p-2">
+                    <Image src={ClockIcon} /> Full time
+                  </div>
+                  <div className="bg-[#F0F6F5] rounded-full flex gap-2 px-4  font-semibold items-center justify-center p-2">
+                    <Image src={CashIcon} /> 10 - 20
+                  </div>
+                  <div className="bg-[#F0F6F5] rounded-full font-semibold px-4 flex gap-2 items-center justify-center p-2">
+                    <Image src={CarIcon} /> 5km
+                  </div>
+                </div>
+              </div>
+            </Link>
+            <Link href="/job">
+              <div className="shadow-md py-5 px-3 rounded-lg space-y-4">
+                <div>
+                  <div className="flex justify-between text-[20px] font-semibold">
+                    <h3>Vet Manager</h3>
+                    <p className="text-[14px] text-[#14B8A6]">03-24-2023</p>
+                  </div>
+                  <p className="text-[14px] text-slate-500">Sanderson 812 NT</p>
+                </div>
+                <p className="text-[14px] text-slate-600">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore.
+                </p>
+                <div className="flex gap-2 text-[12px]">
+                  <div className="bg-[#F0F6F5] rounded-full flex px-4 gap-2  font-semibold items-center justify-center p-2">
+                    <Image src={ClockIcon} /> Full time
+                  </div>
+                  <div className="bg-[#F0F6F5] rounded-full flex gap-2 px-4  font-semibold items-center justify-center p-2">
+                    <Image src={CashIcon} /> 10 - 20
+                  </div>
+                  <div className="bg-[#F0F6F5] rounded-full font-semibold px-4 flex gap-2 items-center justify-center p-2">
+                    <Image src={CarIcon} /> 5km
+                  </div>
+                </div>
+              </div>
+            </Link>
+            <Link href="/job">
+              <div className="shadow-md py-5 px-3 rounded-lg space-y-4">
+                <div>
+                  <div className="flex justify-between text-[20px] font-semibold">
+                    <h3>Vet Manager</h3>
+                    <p className="text-[14px] text-[#14B8A6]">03-24-2023</p>
+                  </div>
+                  <p className="text-[14px] text-slate-500">Sanderson 812 NT</p>
+                </div>
+                <p className="text-[14px] text-slate-600">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore.
+                </p>
+                <div className="flex gap-2 text-[12px]">
+                  <div className="bg-[#F0F6F5] rounded-full flex px-4 gap-2  font-semibold items-center justify-center p-2">
+                    <Image src={ClockIcon} /> Full time
+                  </div>
+                  <div className="bg-[#F0F6F5] rounded-full flex gap-2 px-4  font-semibold items-center justify-center p-2">
+                    <Image src={CashIcon} /> 10 - 20
+                  </div>
+                  <div className="bg-[#F0F6F5] rounded-full font-semibold px-4 flex gap-2 items-center justify-center p-2">
+                    <Image src={CarIcon} /> 5km
+                  </div>
+                </div>
+              </div>
+            </Link>
+            <Link href="/job">
+              <div className="shadow-md py-5 px-3 rounded-lg space-y-4">
                 <div>
                   <div className="flex justify-between text-[20px] font-semibold">
                     <h3>Vet Manager</h3>

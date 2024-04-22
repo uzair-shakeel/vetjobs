@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <>
       <header className="w-full z-50">
-        <nav className="flex justify-between items-center py-4 px-10 lg:px-8">
+        <nav className="flex justify-between items-center py-6 px-6 md:px-10 lg:px-8">
           <div className="flex items-center space-x-2">
             <Image src={Logo} alt="Logo" className="w-10 h-10" />
             <span className="font-bold text-xl">Logo Here</span>
@@ -73,7 +73,7 @@ const Header = () => {
         </nav>
       </header>
       <div
-        className={`lg:hidden bg-[#E6F3F1] pb-4 px-10 lg:px-20 transition-all duration-300 ${
+        className={`lg:hidden bg-[#E6F3F1] pb-4 px-6 md:px-10 lg:px-8 transition-all duration-300 ${
           mobileNavActive ? "top-0" : "-top-full"
         } fixed left-0 w-full z-40`}
       >

@@ -250,8 +250,8 @@ const page = () => {
               </div>
             </div>
           </div>
-          <div className="rounded-[15px] max-h-[370px] flex flex-col gap-4 justify-center  w-[75%] md:w-[50%] lg:w-[30%]  shadow-2xl px-4 py-7 ">
-            <h3 className="text-[16px font-semibold]">Recruiters info</h3>
+          <div className="rounded-[15px] max-h-[370px] flex flex-col gap-4 justify-center  w-full  lg:w-[30%]  shadow-2xl px-4 py-7 ">
+            <h3 className="text-[16px] font-semibold">Recruiters info</h3>
             <div
               className="flex gap-2 items-center
           "
