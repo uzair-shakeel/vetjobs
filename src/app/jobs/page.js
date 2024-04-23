@@ -46,40 +46,40 @@ const jobs = () => {
             </Button>
           </div>
           <div className="hidden md:flex gap-2 p-2 justify-between ">
-            <div className="rounded-lg lg:rounded-full lg:pl-6 gap-2 lg:gap-5 text-[12px] lg:text-[14px] p-1 lg:p-2 items-center  bg-[#F0F6F5] flex flex-col lg:flex-row ">
+            <div className="rounded-lg lg:rounded-full lg:pl-5 gap-2 lg:gap-5 text-[10px] lg:text-[13px] p-1 lg:p-2 items-center  bg-[#F0F6F5] flex  ">
               <div className="flex items-center text-slate-500 gap-1">
                 Job Type
                 <ChevronDown size={18} />
               </div>
-              <div className="bg-white rounded-full flex  gap-1  font-semibold items-center justify-center p-1">
+              <div className="bg-white rounded-full flex  gap-1  font-semibold items-center justify-center p-2">
                 <Image src={ClockIcon} /> Full time, On...
               </div>
             </div>
-            <div className="rounded-lg lg:rounded-full lg:pl-6 gap-2 lg:gap-5 text-[12px] lg:text-[14px] p-1 lg:p-2 items-center  bg-[#F0F6F5] flex flex-col lg:flex-row ">
+            <div className="rounded-lg lg:rounded-full lg:pl-5 gap-2 lg:gap-5 text-[10px] lg:text-[13px] p-1 lg:p-2 items-center  bg-[#F0F6F5] flex ">
               <div className="flex items-center text-slate-500 gap-1">
                 Hourly Rate
                 <ChevronDown size={18} />
               </div>
-              <div className="bg-white rounded-full flex gap-1  font-semibold items-center justify-center p-2">
+              <div className="bg-white rounded-lg lg:rounded-full flex gap-1  font-semibold items-center justify-center p-1">
                 <Image src={CashIcon} /> 10 - 20
               </div>
             </div>
-            <div className="flex rounded-lg lg:rounded-full lg:pl-6 gap-1 lg:gap-5 text-[12px] lg:text-[14px] p-1 lg:p-2 items-center  bg-[#F0F6F5]  flex-col lg:flex-row ">
+            <div className="flex rounded-lg lg:rounded-full lg:pl-5 gap-1 lg:gap-5 text-[10px] lg:text-[13px] p-1 lg:p-2 items-center  bg-[#F0F6F5]  ">
               <div className="flex items-center text-slate-500 gap-1">
                 Distance
                 <ChevronDown size={18} />
               </div>
-              <div className="bg-white rounded-full font-semibold flex gap-1 items-center justify-center p-2">
+              <div className="bg-white rounded-lg lg:rounded-full flex gap-1  font-semibold items-center justify-center p-1">
                 <Image src={CarIcon} /> 5km
               </div>
             </div>
-            <div className="rounded-lg lg:rounded-full lg:pl-6 gap-1 lg:gap-5 text-[12px] lg:text-[14px] p-1 lg:p-2 items-center  bg-[#F0F6F5] flex flex-col lg:flex-row ">
+            <div className="rounded-lg lg:rounded-full lg:pl-5 gap-1 lg:gap-5 text-[10px] lg:text-[13px] p-1 lg:p-2 items-center  bg-[#F0F6F5] flex  ">
               <div className="flex items-center text-slate-500 gap-1">
                 Starts/End date
                 <ChevronDown size={18} />
               </div>
 
-              <div className="bg-white rounded-full font-semibold flex gap-1 items-center justify-center p-2">
+              <div className="bg-white rounded-lg lg:rounded-full flex gap-1  font-semibold items-center justify-center p-1">
                 <Image src={ClockGIcon} className="text-[#14B8A6]" />
                 23 Mar - 23 Jun
               </div>
@@ -114,19 +114,20 @@ const jobs = () => {
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore.
                 </p>
-                <div className="flex gap-2 text-[12px]">
-                  <div className="bg-[#F0F6F5] rounded-full flex px-4 gap-2  font-semibold items-center justify-center p-2">
+                <div className="flex gap-2 text-[10px] justify-between">
+                  <div className="bg-[#F0F6F5] rounded-full flex  gap-2  font-semibold items-center justify-center px-2 ">
                     <Image src={ClockIcon} /> Full time
                   </div>
-                  <div className="bg-[#F0F6F5] rounded-full flex gap-2 px-4  font-semibold items-center justify-center p-2">
+                  <div className="bg-[#F0F6F5] rounded-full flex gap-2   font-semibold items-center justify-center px-2 ">
                     <Image src={CashIcon} /> 10 - 20
                   </div>
-                  <div className="bg-[#F0F6F5] rounded-full font-semibold px-4 flex gap-2 items-center justify-center p-2">
+                  <div className="bg-[#F0F6F5] rounded-full font-semibold  flex gap-2 items-center justify-center px-2 ">
                     <Image src={CarIcon} /> 5km
                   </div>
                 </div>
               </div>
             </Link>
+
             <Link href="/job">
               <div className="shadow-md py-5 px-3 rounded-lg space-y-4">
                 <div>
@@ -140,19 +141,20 @@ const jobs = () => {
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore.
                 </p>
-                <div className="flex gap-2 text-[12px]">
-                  <div className="bg-[#F0F6F5] rounded-full flex px-4 gap-2  font-semibold items-center justify-center p-2">
+                <div className="flex gap-2 text-[10px] justify-between">
+                  <div className="bg-[#F0F6F5] rounded-full flex  gap-2  font-semibold items-center justify-center px-2 ">
                     <Image src={ClockIcon} /> Full time
                   </div>
-                  <div className="bg-[#F0F6F5] rounded-full flex gap-2 px-4  font-semibold items-center justify-center p-2">
+                  <div className="bg-[#F0F6F5] rounded-full flex gap-2   font-semibold items-center justify-center px-2 ">
                     <Image src={CashIcon} /> 10 - 20
                   </div>
-                  <div className="bg-[#F0F6F5] rounded-full font-semibold px-4 flex gap-2 items-center justify-center p-2">
+                  <div className="bg-[#F0F6F5] rounded-full font-semibold  flex gap-2 items-center justify-center px-2 ">
                     <Image src={CarIcon} /> 5km
                   </div>
                 </div>
               </div>
             </Link>
+
             <Link href="/job">
               <div className="shadow-md py-5 px-3 rounded-lg space-y-4">
                 <div>
@@ -166,19 +168,20 @@ const jobs = () => {
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore.
                 </p>
-                <div className="flex gap-2 text-[12px]">
-                  <div className="bg-[#F0F6F5] rounded-full flex px-4 gap-2  font-semibold items-center justify-center p-2">
+                <div className="flex gap-2 text-[10px] justify-between">
+                  <div className="bg-[#F0F6F5] rounded-full flex  gap-2  font-semibold items-center justify-center px-2 ">
                     <Image src={ClockIcon} /> Full time
                   </div>
-                  <div className="bg-[#F0F6F5] rounded-full flex gap-2 px-4  font-semibold items-center justify-center p-2">
+                  <div className="bg-[#F0F6F5] rounded-full flex gap-2   font-semibold items-center justify-center px-2 ">
                     <Image src={CashIcon} /> 10 - 20
                   </div>
-                  <div className="bg-[#F0F6F5] rounded-full font-semibold px-4 flex gap-2 items-center justify-center p-2">
+                  <div className="bg-[#F0F6F5] rounded-full font-semibold  flex gap-2 items-center justify-center px-2 ">
                     <Image src={CarIcon} /> 5km
                   </div>
                 </div>
               </div>
             </Link>
+
             <Link href="/job">
               <div className="shadow-md py-5 px-3 rounded-lg space-y-4">
                 <div>
@@ -192,19 +195,20 @@ const jobs = () => {
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore.
                 </p>
-                <div className="flex gap-2 text-[12px]">
-                  <div className="bg-[#F0F6F5] rounded-full flex px-4 gap-2  font-semibold items-center justify-center p-2">
+                <div className="flex gap-2 text-[10px] justify-between">
+                  <div className="bg-[#F0F6F5] rounded-full flex  gap-2  font-semibold items-center justify-center px-2 ">
                     <Image src={ClockIcon} /> Full time
                   </div>
-                  <div className="bg-[#F0F6F5] rounded-full flex gap-2 px-4  font-semibold items-center justify-center p-2">
+                  <div className="bg-[#F0F6F5] rounded-full flex gap-2   font-semibold items-center justify-center px-2 ">
                     <Image src={CashIcon} /> 10 - 20
                   </div>
-                  <div className="bg-[#F0F6F5] rounded-full font-semibold px-4 flex gap-2 items-center justify-center p-2">
+                  <div className="bg-[#F0F6F5] rounded-full font-semibold  flex gap-2 items-center justify-center px-2 ">
                     <Image src={CarIcon} /> 5km
                   </div>
                 </div>
               </div>
             </Link>
+
             <Link href="/job">
               <div className="shadow-md py-5 px-3 rounded-lg space-y-4">
                 <div>
@@ -218,19 +222,20 @@ const jobs = () => {
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore.
                 </p>
-                <div className="flex gap-2 text-[12px]">
-                  <div className="bg-[#F0F6F5] rounded-full flex px-4 gap-2  font-semibold items-center justify-center p-2">
+                <div className="flex gap-2 text-[10px] justify-between">
+                  <div className="bg-[#F0F6F5] rounded-full flex  gap-2  font-semibold items-center justify-center px-2 ">
                     <Image src={ClockIcon} /> Full time
                   </div>
-                  <div className="bg-[#F0F6F5] rounded-full flex gap-2 px-4  font-semibold items-center justify-center p-2">
+                  <div className="bg-[#F0F6F5] rounded-full flex gap-2   font-semibold items-center justify-center px-2 ">
                     <Image src={CashIcon} /> 10 - 20
                   </div>
-                  <div className="bg-[#F0F6F5] rounded-full font-semibold px-4 flex gap-2 items-center justify-center p-2">
+                  <div className="bg-[#F0F6F5] rounded-full font-semibold  flex gap-2 items-center justify-center px-2 ">
                     <Image src={CarIcon} /> 5km
                   </div>
                 </div>
               </div>
             </Link>
+
             <Link href="/job">
               <div className="shadow-md py-5 px-3 rounded-lg space-y-4">
                 <div>
@@ -244,19 +249,20 @@ const jobs = () => {
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore.
                 </p>
-                <div className="flex gap-2 text-[12px]">
-                  <div className="bg-[#F0F6F5] rounded-full flex px-4 gap-2  font-semibold items-center justify-center p-2">
+                <div className="flex gap-2 text-[10px] justify-between">
+                  <div className="bg-[#F0F6F5] rounded-full flex  gap-2  font-semibold items-center justify-center px-2 ">
                     <Image src={ClockIcon} /> Full time
                   </div>
-                  <div className="bg-[#F0F6F5] rounded-full flex gap-2 px-4  font-semibold items-center justify-center p-2">
+                  <div className="bg-[#F0F6F5] rounded-full flex gap-2   font-semibold items-center justify-center px-2 ">
                     <Image src={CashIcon} /> 10 - 20
                   </div>
-                  <div className="bg-[#F0F6F5] rounded-full font-semibold px-4 flex gap-2 items-center justify-center p-2">
+                  <div className="bg-[#F0F6F5] rounded-full font-semibold  flex gap-2 items-center justify-center px-2 ">
                     <Image src={CarIcon} /> 5km
                   </div>
                 </div>
               </div>
             </Link>
+
             <Link href="/job">
               <div className="shadow-md py-5 px-3 rounded-lg space-y-4">
                 <div>
@@ -270,19 +276,20 @@ const jobs = () => {
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore.
                 </p>
-                <div className="flex gap-2 text-[12px]">
-                  <div className="bg-[#F0F6F5] rounded-full flex px-4 gap-2  font-semibold items-center justify-center p-2">
+                <div className="flex gap-2 text-[10px] justify-between">
+                  <div className="bg-[#F0F6F5] rounded-full flex  gap-2  font-semibold items-center justify-center px-2 ">
                     <Image src={ClockIcon} /> Full time
                   </div>
-                  <div className="bg-[#F0F6F5] rounded-full flex gap-2 px-4  font-semibold items-center justify-center p-2">
+                  <div className="bg-[#F0F6F5] rounded-full flex gap-2   font-semibold items-center justify-center px-2 ">
                     <Image src={CashIcon} /> 10 - 20
                   </div>
-                  <div className="bg-[#F0F6F5] rounded-full font-semibold px-4 flex gap-2 items-center justify-center p-2">
+                  <div className="bg-[#F0F6F5] rounded-full font-semibold  flex gap-2 items-center justify-center px-2 ">
                     <Image src={CarIcon} /> 5km
                   </div>
                 </div>
               </div>
             </Link>
+
             <Link href="/job">
               <div className="shadow-md py-5 px-3 rounded-lg space-y-4">
                 <div>
@@ -296,19 +303,20 @@ const jobs = () => {
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore.
                 </p>
-                <div className="flex gap-2 text-[12px]">
-                  <div className="bg-[#F0F6F5] rounded-full flex px-4 gap-2  font-semibold items-center justify-center p-2">
+                <div className="flex gap-2 text-[10px] justify-between">
+                  <div className="bg-[#F0F6F5] rounded-full flex  gap-2  font-semibold items-center justify-center px-2 ">
                     <Image src={ClockIcon} /> Full time
                   </div>
-                  <div className="bg-[#F0F6F5] rounded-full flex gap-2 px-4  font-semibold items-center justify-center p-2">
+                  <div className="bg-[#F0F6F5] rounded-full flex gap-2   font-semibold items-center justify-center px-2 ">
                     <Image src={CashIcon} /> 10 - 20
                   </div>
-                  <div className="bg-[#F0F6F5] rounded-full font-semibold px-4 flex gap-2 items-center justify-center p-2">
+                  <div className="bg-[#F0F6F5] rounded-full font-semibold  flex gap-2 items-center justify-center px-2 ">
                     <Image src={CarIcon} /> 5km
                   </div>
                 </div>
               </div>
             </Link>
+
             <Link href="/job">
               <div className="shadow-md py-5 px-3 rounded-lg space-y-4">
                 <div>
@@ -322,19 +330,20 @@ const jobs = () => {
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore.
                 </p>
-                <div className="flex gap-2 text-[12px]">
-                  <div className="bg-[#F0F6F5] rounded-full flex px-4 gap-2  font-semibold items-center justify-center p-2">
+                <div className="flex gap-2 text-[10px] justify-between">
+                  <div className="bg-[#F0F6F5] rounded-full flex  gap-2  font-semibold items-center justify-center px-2 ">
                     <Image src={ClockIcon} /> Full time
                   </div>
-                  <div className="bg-[#F0F6F5] rounded-full flex gap-2 px-4  font-semibold items-center justify-center p-2">
+                  <div className="bg-[#F0F6F5] rounded-full flex gap-2   font-semibold items-center justify-center px-2 ">
                     <Image src={CashIcon} /> 10 - 20
                   </div>
-                  <div className="bg-[#F0F6F5] rounded-full font-semibold px-4 flex gap-2 items-center justify-center p-2">
+                  <div className="bg-[#F0F6F5] rounded-full font-semibold  flex gap-2 items-center justify-center px-2 ">
                     <Image src={CarIcon} /> 5km
                   </div>
                 </div>
               </div>
             </Link>
+
             <Link href="/job">
               <div className="shadow-md py-5 px-3 rounded-lg space-y-4">
                 <div>
@@ -348,19 +357,20 @@ const jobs = () => {
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore.
                 </p>
-                <div className="flex gap-2 text-[12px]">
-                  <div className="bg-[#F0F6F5] rounded-full flex px-4 gap-2  font-semibold items-center justify-center p-2">
+                <div className="flex gap-2 text-[10px] justify-between">
+                  <div className="bg-[#F0F6F5] rounded-full flex  gap-2  font-semibold items-center justify-center px-2 ">
                     <Image src={ClockIcon} /> Full time
                   </div>
-                  <div className="bg-[#F0F6F5] rounded-full flex gap-2 px-4  font-semibold items-center justify-center p-2">
+                  <div className="bg-[#F0F6F5] rounded-full flex gap-2   font-semibold items-center justify-center px-2 ">
                     <Image src={CashIcon} /> 10 - 20
                   </div>
-                  <div className="bg-[#F0F6F5] rounded-full font-semibold px-4 flex gap-2 items-center justify-center p-2">
+                  <div className="bg-[#F0F6F5] rounded-full font-semibold  flex gap-2 items-center justify-center px-2 ">
                     <Image src={CarIcon} /> 5km
                   </div>
                 </div>
               </div>
             </Link>
+
             <Link href="/job">
               <div className="shadow-md py-5 px-3 rounded-lg space-y-4">
                 <div>
@@ -374,19 +384,20 @@ const jobs = () => {
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore.
                 </p>
-                <div className="flex gap-2 text-[12px]">
-                  <div className="bg-[#F0F6F5] rounded-full flex px-4 gap-2  font-semibold items-center justify-center p-2">
+                <div className="flex gap-2 text-[10px] justify-between">
+                  <div className="bg-[#F0F6F5] rounded-full flex  gap-2  font-semibold items-center justify-center px-2 ">
                     <Image src={ClockIcon} /> Full time
                   </div>
-                  <div className="bg-[#F0F6F5] rounded-full flex gap-2 px-4  font-semibold items-center justify-center p-2">
+                  <div className="bg-[#F0F6F5] rounded-full flex gap-2   font-semibold items-center justify-center px-2 ">
                     <Image src={CashIcon} /> 10 - 20
                   </div>
-                  <div className="bg-[#F0F6F5] rounded-full font-semibold px-4 flex gap-2 items-center justify-center p-2">
+                  <div className="bg-[#F0F6F5] rounded-full font-semibold  flex gap-2 items-center justify-center px-2 ">
                     <Image src={CarIcon} /> 5km
                   </div>
                 </div>
               </div>
             </Link>
+
             <Link href="/job">
               <div className="shadow-md py-5 px-3 rounded-lg space-y-4">
                 <div>
@@ -400,14 +411,14 @@ const jobs = () => {
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore.
                 </p>
-                <div className="flex gap-2 text-[12px]">
-                  <div className="bg-[#F0F6F5] rounded-full flex px-4 gap-2  font-semibold items-center justify-center p-2">
+                <div className="flex gap-2 text-[10px] justify-between">
+                  <div className="bg-[#F0F6F5] rounded-full flex  gap-2  font-semibold items-center justify-center px-2 ">
                     <Image src={ClockIcon} /> Full time
                   </div>
-                  <div className="bg-[#F0F6F5] rounded-full flex gap-2 px-4  font-semibold items-center justify-center p-2">
+                  <div className="bg-[#F0F6F5] rounded-full flex gap-2   font-semibold items-center justify-center px-2 ">
                     <Image src={CashIcon} /> 10 - 20
                   </div>
-                  <div className="bg-[#F0F6F5] rounded-full font-semibold px-4 flex gap-2 items-center justify-center p-2">
+                  <div className="bg-[#F0F6F5] rounded-full font-semibold  flex gap-2 items-center justify-center px-2 ">
                     <Image src={CarIcon} /> 5km
                   </div>
                 </div>

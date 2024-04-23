@@ -52,7 +52,7 @@ const Home = () => {
                 veterinarian staff and employers
               </h1>
 
-              <p className="text-[16px] pb-5 text-gray-600 ">
+              <p className="text-[13px] md:text-[16px] pb-5 text-gray-600 ">
                 Clarity gives you the blocks & components you need to create a
                 truly professional website, landing page or admin panel for your
                 SaaS. <br />
@@ -146,8 +146,10 @@ const Home = () => {
             <div className="bg-[#FEE2E2] rounded-full border-8 border-[#FEF2F2] p-2">
               <Mail />
             </div>
-            <h3 className="font-semibold text-[20px]">Share team inboxes</h3>
-            <p className="text-[16px] text-center text-[#667085]">
+            <h3 className="font-semibold text-[18px] md:text-[20px]">
+              Share team inboxes
+            </h3>
+            <p className="text-[13px] md:text-[16px] px-5 md:px-0 text-center text-[#667085]">
               Whether you have a team of 2 or 200, our shared team inboxes keep
               everyone on the same page and in the loop.
             </p>
@@ -156,10 +158,10 @@ const Home = () => {
             <div className="bg-[#FEE2E2] rounded-full border-8 border-[#FEF2F2] p-2">
               <Zap />
             </div>
-            <h3 className="font-semibold text-[20px]">
+            <h3 className="font-semibold text-[18px] md:text-[20px]">
               Deliver instant answers
             </h3>
-            <p className="text-[16px] text-center text-[#667085]">
+            <p className="text-[13px] md:text-[16px] px-5 md:px-0 text-center text-[#667085]">
               An all-in-one customer service platform that helps you balance
               everything your customers need to be happy.
             </p>
@@ -168,10 +170,10 @@ const Home = () => {
             <div className="bg-[#FEE2E2] rounded-full border-8 border-[#FEF2F2] p-2">
               <BarChart2 />
             </div>
-            <h3 className="font-semibold text-[20px]">
+            <h3 className="font-semibold text-[18px] md:text-[20px]">
               Manage your team with reports
             </h3>
-            <p className="text-[16px] text-center text-[#667085]">
+            <p className="text-[13px] md:text-[16px] px-5 md:px-0 text-center text-[#667085]">
               Measure what matters with Untitled’s easy-to-use reports. You can
               filter, export, and drilldown on the data in a couple clicks.
             </p>
@@ -180,10 +182,10 @@ const Home = () => {
             <div className="bg-[#FEE2E2] rounded-full border-8 border-[#FEF2F2] p-2">
               <Smile />
             </div>
-            <h3 className="font-semibold text-[20px]">
+            <h3 className="font-semibold text-[18px] md:text-[20px]">
               Connect with customers
             </h3>
-            <p className="text-[16px] text-center text-[#667085]">
+            <p className="text-[13px] md:text-[16px] px-5 md:px-0 text-center text-[#667085]">
               Solve a problem or close a sale in real-time with chat. If no one
               is available, customers are seamlessly routed to email without
               confusion.
@@ -193,10 +195,10 @@ const Home = () => {
             <div className="bg-[#FEE2E2] rounded-full border-8 border-[#FEF2F2] p-2">
               <Waypoints />
             </div>
-            <h3 className="font-semibold text-[20px]">
+            <h3 className="font-semibold text-[18px] md:text-[20px]">
               Connect the tools you already use
             </h3>
-            <p className="text-[16px] text-center text-[#667085]">
+            <p className="text-[13px] md:text-[16px] px-5 md:px-0 text-center text-[#667085]">
               Explore 100+ integrations that make your day-to-day workflow more
               efficient and familiar. Plus, our extensive developer tools.
             </p>
@@ -205,10 +207,10 @@ const Home = () => {
             <div className="bg-[#FEE2E2] rounded-full border-8 border-[#FEF2F2] p-2">
               <MessageCircleQuestion />
             </div>
-            <h3 className="font-semibold text-[20px]">
+            <h3 className="font-semibold text-[18px] md:text-[20px]">
               Our people make the difference
             </h3>
-            <p className="text-[16px] text-center text-[#667085]">
+            <p className="text-[13px] md:text-[16px] px-5 md:px-0 text-center text-[#667085]">
               We’re an extension of your customer service team, and all of our
               resources are free. Chat to our friendly team 24/7 when you need
               help.
@@ -223,9 +225,9 @@ const Home = () => {
           </Button>
         </Link>
       </section>
-      <div className="flex w-screen overflow-hidden h-[230px] md:h-[320px] lg:h-[370px] text-white ">
+      <div className="flex w-screen overflow-hidden h-[170px] md:h-[320px] lg:h-[370px] text-white ">
         <div
-          className="bg-cover h-full w-full min-w-[30%] flex flex-col text-center lg:flex-row gap-[5%] items-center justify-center"
+          className="bg-cover h-full w-full min-w-[30%] flex  text-center  gap-[5%] items-center justify-center"
           style={{ backgroundImage: "url('/BG (1).png')" }}
         >
           <div>
@@ -248,7 +250,7 @@ const Home = () => {
           </div>
         </div>
 
-        <Image src={image} alt="image" />
+        <Image src={image} alt="image" className="hidden md:block" />
       </div>
 
       <section className="lg:min-h-screen flex flex-col gap-[60px] items-center px-[12%] md:py-[5%] py-[10%]">
@@ -297,20 +299,22 @@ const Home = () => {
 
       <section className="lg:min-h-screen flex flex-col items-center px-[3%] md:px-[12%] py-[5%] gap-[25px] md:gap-[60px] bg-[#E6F3F1] mx-auto w-full">
         <div className="space-y-5 flex items-center flex-col">
-          <h1 className="text-[35px] text-center md:text-[42px] font-bold">
-            Frequently asked questions
-          </h1>
+          <div>
+            <h1 className="text-[35px] text-center md:text-[42px] font-bold">
+              Frequently asked questions
+            </h1>
 
-          <p className="text-[12px] text-center md:text-[16px] text-[#475569]">
-            Ask everything you need to know about our products and services.
-          </p>
+            <p className="text-[15px] text-center md:text-[16px] text-[#475569]">
+              Ask everything you need to know about our products and services.
+            </p>
+          </div>
         </div>
         <Accordion
           variant="light"
           className="bg-white rounded-md md:py-[20px] py-[2%] px-[5%] mb-10 md:px-[50px]"
         >
           <AccordionItem title="Q. How this theme is different from others in market?">
-            <div className="text-[16px] text-slate-600">
+            <div className="text-[13px] md:text-[16px] text-slate-600">
               It is a long established fact that a reader will be distracted by
               the readable content of a page when looking at its layout. The
               point of using Lorem Ipsum is that it has a more-or-less normal
@@ -319,7 +323,7 @@ const Home = () => {
           </AccordionItem>
 
           <AccordionItem title="Q. Does this theme supports plugins?">
-            <div className="text-[16px] text-slate-600">
+            <div className="text-[13px] md:text-[16px] text-slate-600">
               It is a long established fact that a reader will be distracted by
               the readable content of a page when looking at its layout. The
               point of using Lorem Ipsum is that it has a more-or-less normal
@@ -328,7 +332,7 @@ const Home = () => {
           </AccordionItem>
 
           <AccordionItem title="Q. Do you provide any moneyback guarantee in this product?">
-            <div className="text-[16px] text-slate-600">
+            <div className="text-[13px] md:text-[16px] text-slate-600">
               It is a long established fact that a reader will be distracted by
               the readable content of a page when looking at its layout. The
               point of using Lorem Ipsum is that it has a more-or-less normal
@@ -337,7 +341,7 @@ const Home = () => {
           </AccordionItem>
 
           <AccordionItem title="Q. What payment method do you support?">
-            <div className="text-[16px] text-slate-600">
+            <div className="text-[13px] md:text-[16px] text-slate-600">
               It is a long established fact that a reader will be distracted by
               the readable content of a page when looking at its layout. The
               point of using Lorem Ipsum is that it has a more-or-less normal
@@ -346,7 +350,7 @@ const Home = () => {
           </AccordionItem>
 
           <AccordionItem title="Q. Will I get money back if I am not satisfied?">
-            <div className="text-[16px] text-slate-600">
+            <div className="text-[13px] md:text-[16px] text-slate-600">
               It is a long established fact that a reader will be distracted by
               the readable content of a page when looking at its layout. The
               point of using Lorem Ipsum is that it has a more-or-less normal
@@ -354,7 +358,7 @@ const Home = () => {
             </div>
           </AccordionItem>
           <AccordionItem title="Q. How do you provide support?">
-            <div className="text-[16px] text-slate-600">
+            <div className="text-[13px] md:text-[16px] text-slate-600">
               It is a long established fact that a reader will be distracted by
               the readable content of a page when looking at its layout. The
               point of using Lorem Ipsum is that it has a more-or-less normal

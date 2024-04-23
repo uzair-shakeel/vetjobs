@@ -68,7 +68,7 @@ const page = () => {
                 <h1 className="text-[35px] md:text-[42px] lg:text-[52px] font-bold">
                   About Company
                 </h1>
-                <p className="leading-[31px] text-[12px] md:text-[16px] py-3 text-slate-600">
+                <p className="leading-[31px] text-[14px] md:text-[16px] py-3 text-slate-600">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna
                   aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing
